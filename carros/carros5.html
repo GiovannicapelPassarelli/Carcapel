@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Volkswagen Amarock</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carro {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .carro h2 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .carro h3 {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .carro p {
+      margin-bottom: 5px;
+    }
+
+    .carro-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+      font-size: 40px;
+      color: #333;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #ff5722;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff7043;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="carro">
+        <h1>Marca:VOLKSWAGEN</h1>
+        <h1>Modelo:AMAROK</h1>
+        <h1>Ano:2012/2012</h1>
+        <h1>2.0 SE 4X4 CD 16V TURBO INTERCOOLER 4P</h1>
+        <h1>Preço:R$:94,900</h1>
+        <h1>Quilometragem:152.000Km</h1>
+        <h1>Cor:Prata</h1>
+        <h1>Conheça a Volkswagen Amarok 2.0 SE 4x4 CD 16V Turbo Intercooler de 2012, uma picape que une força, desempenho e confiabilidade em um pacote robusto e versátil. Com sua capacidade off-road impressionante e interior espaçoso, a Amarok é a companheira perfeita para qualquer desafio, seja no asfalto ou fora dele.
+            
+            A Volkswagen Amarok 2012 possui um design imponente que reflete sua natureza robusta e poderosa. Suas linhas marcantes e proporções equilibradas conferem a ela uma presença única nas estradas. Com sua carroceria de cabine dupla, há espaço de sobra para acomodar sua equipe e cargas com facilidade. Além disso, sua tração 4x4 proporciona um desempenho excepcional em terrenos acidentados, garantindo que você possa enfrentar qualquer desafio com confiança.
+            
+            No interior, você encontrará um ambiente espaçoso e confortável, projetado para tornar suas viagens mais agradáveis. Os assentos ergonômicos oferecem suporte adequado, mesmo em percursos longos. Os materiais duráveis e de alta qualidade garantem durabilidade e resistência, enquanto os recursos de conveniência, como ar-condicionado e sistema de som, proporcionam conforto adicional.
+            
+            A potência da Volkswagen Amarok 2012 é entregue por meio de seu motor 2.0 16V Turbo Intercooler, oferecendo um desempenho impressionante e uma resposta ágil ao acelerador. Sua capacidade de carga generosa permite transportar equipamentos e cargas pesadas com facilidade, tornando-a ideal para uso tanto comercial quanto pessoal.
+            
+            Além disso, a segurança é uma prioridade na Amarok. Com recursos como freios ABS, airbags e controle de estabilidade, você pode ter tranquilidade sabendo que está protegido em todas as situações. A Amarok também possui uma variedade de recursos de assistência ao motorista, proporcionando uma experiência de condução segura e confiável.
+            
+            Não perca a oportunidade de possuir uma Volkswagen Amarok 2.0 SE 4x4 CD 16V Turbo Intercooler de 2012. Visite-nos agora mesmo e descubra por que esta picape é uma referência em potência, confiabilidade e versatilidade. Agende um test-drive e experimente o prazer de dirigir uma picape robusta que está pronta para enfrentar qualquer desafio, seja na cidade ou no campo.</h1>
+       <h1>Vendedor:Revenda Guacu Automóveis - Areião, Mogi Guaçu</h1>
+        <h1>Telefone:(19) 98140-0199</h1>
+        <h1> Depois que Pagou,Me chama nesse numero: 11949839198</h1>
+        
+        <div class="carro-carousel">
+          <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/198940/2424796/volkswagen-amarok-em-mogi-guacu-sp-f1f30b3d47c-01.jpg" alt="Imagem 1"></div>
+          <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/198940/2424796/volkswagen-amarok-em-mogi-guacu-sp-f1f30b3d47c-06.jpg" alt="Imagem 2"></div>
+          <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/198940/2424796/volkswagen-amarok-em-mogi-guacu-sp-f1f30b3d47c-04.jpg" alt="Imagem 3"></div>
+        </div>
+      </div>
+    
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.carro-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<button type="button" class="slick-prev">←</button>',
+            nextArrow: '<button type="button" class="slick-next">→</button>'
+          });
+        });
+      </script>
+    </body>
+    </html>
+   </div>
+  </body>
+</html>

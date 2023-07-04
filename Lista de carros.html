@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catálogo de Carros da Autocar</title>
+  <img src="logo/Capel Car.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .car {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .car h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .car img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .car p {
+      color: #777;
+      line-height: 1.5;
+    }
+    .car button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 3px;
+      background-color: #00d9ff;
+      color: #000000;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .car button:hover {
+      background-color: #555;
+    }
+    .filter-container {
+      margin-bottom: 20px;
+    }
+    .filter-label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .filter-select {
+      padding: 4px;
+      font-size: 14px;
+    }
+    .filter-container {
+  margin-bottom: 10px;
+}
+
+.filter-label {
+  font-weight: bold;
+}
+
+.filter-select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+  </style>
+</head> 
+<body>
+  <h1>Catálogo de Carros</h1> 
+
+  <div class="filter-container">
+    <label class="filter-label" for="brand-filter">Marca:</label>
+    <select id="brand-filter" class="filter-select">
+      <option value="all">Todas as marcas</option>
+      <option value="Audi">audi</option>
+      <option value="Bmw">Bmw</option>
+      <option value="Chevrolet">Chevrolet</option>
+      <option value="citroen">Citroen</option>
+      <option value="fiat"> Fiat</option>
+      <option value="ford">ford</option>
+      <option value="hyundai">Hyundai</option>
+      <option value="jeep">Jeep</option>
+      <option value="peugeot">Peugeot</option>
+      <option value="porsche">Porsche</option>
+      <option value="toyota">Toyota</option>
+      <option value="volkswagen">Volkswagen</option>
+    </select>
+  </div>
+
+  <div class="filter-container">
+    <label class="filter-label" for="model-filter">Modelo:</label>
+    <select id="model-filter" class="filter-select">
+      <option value="all">Todos os modelos</option>
+      <option value="208">208</option>
+      <option value="320I">320I</option>
+      <option value="500">500</option>
+      <option value="718">718</option>
+      <option value="A3">A3</option>
+      <option value="a4">A4</option>
+      <option value="amarok">Amarok</option>
+      <option value="Argo">Argo</option>
+      <option value="Aircross">Aircross</option>
+      <option value="C3">C3</option>
+      <option value="C3 Picasso">C3 Picasso</option>
+      <option value="C4 Cactus"> C4 Cactus</option>
+      <option value="C4 lounge">C4 lounge</option>
+      <option value="corsa">corsa</option>
+      <option value="camaro">camaro</option>
+      <option value="corolla">Corolla</option>
+      <option value="cruze">cruze</option>
+      <option value="compass">Compass</option>
+      <option value="elantra">Elantra</option>
+      <option value="e-tron">e-tron</option>
+      <option value="macan">macan</option>
+      <option value="Mobi">Mobi</option>
+      <option value="Mustang">Mustang</option>
+      <option value="onix joy">onix joy</option>
+      <option value="onix">onix</option>    
+      <option value="Prisma">Prisma</option>
+      <option value="Uno">Uno</option>
+      <option value="Xsara Picasso">Xsara Picasso</option> 
+      <option value="X6">X6</option>
+    </select>
+  </div>
+  <div class="filter-container">
+    <label class="filter-label" for="cor">Cor:</label>
+    <select id="cor" class="filter-select">
+      <option value="all">Todas as cores</option>
+      <option value="Prata">Prata</option>
+      <option value="Vermelho">Vermelho</option>
+      <option value="Branco">Branco</option>
+      <option value="Bege">Bege</option>
+      <option value="Preto">Preto</option>
+      <option value="Azul">Azul</option>
+      <option value="Verde">Verde</option>
+      <option value="Amarelo">Amarelo</option>
+      <option value="Laranja">Laranja</option>
+      <option value="Roxo">Roxo</option>
+      <option value="Cinza">Cinza</option>
+      <option value="Marrom">marrom</option>
+    </select>
+  </div>
+  <div class="filter-container">
+    <label class="filter-label" for="ano">ano</label>
+  <select id="ano">
+    <option value="all">Todos</option>
+    <option value="1990">1990</option>
+    <option value="1991">1991</option>
+    <option value="1992">1992</option>
+    <option value="1993">1993</option>
+    <option value="1994">1994</option>
+    <option value="1995">1995</option>
+    <option value="1996">1996</option>
+    <option value="1997">1997</option>
+    <option value="1998">1998</option>
+    <option value="1999">1999</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+    <option value="2004">2004</option>
+    <option value="2005">2005</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    <option value="2009">2009</option>
+    <option value="2010">2010</option>
+    <option value="2011">2011</option>
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+  </select>
+</div>
+  </div>
+  <div class="car" data-brand="jeep" data-model="compass" data-cor="Prata" data-ano="2017">
+    <h2>Jeep Compass</h2>
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/jeep-compass-2.0-16v-diesel-longitude-4x4-automatico-wmimagem16480063135.jpg?s=fill&w=552&h=414&q=60" alt="Carro 1">
+    <p>Longitude</p>
+    <button><a href="carros/carro1.html">Mais informações</a></button>
+  </div>
+  
+  </div>
+  
+  <div class="car" data-brand="peugeot" data-model="208" data-cor="Prata" data-ano="2023">
+    <h2>Peugeot 208</h2>
+    <img src="https://localizaseminovos.vtexassets.com/arquivos/ids/70243846/28fc3488-0ae2-42a4-82f3-f50db3f17e31.jpg?v=638188166164930000" alt="Carro 2">
+    <p>2.6 Alure</p>
+    <button><a href="carros/carros2.html">Mais informações</a></button>
+  </div>
+
+  <div class="car" data-brand="toyota" data-model="corolla" data-cor="Branco" data-ano="2021">
+    <h2>Toyota Corolla</h2>
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230624/toyota-corolla-2.0-vvtie-flex-grs-direct-shift-wmimagem11362847019.jpg?s=fill&w=1920&h=1440&q=75" alt="Carro 3">
+    <p>2.0 GR-S</p>
+    <button><a href="carros/carros3.html">Mais informações</a></button>
+  </div>
+
+  <div class="car" data-brand="porsche" data-model="718" data-cor="Branco" data-ano="2020">
+    <h2>Porsche 718</h2>
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/porsche-718-2.0-16v-h4-gasolina-boxster-pdk-wmimagem14260617630.jpg?s=fill&w=552&h=414&q=60" alt="Carro 4">
+    <p>2.0 Boxster</p>
+    <button><a href="carros/carros4.html">Mais informações</a></button>
+  </div>
+
+  <div class="car" data-brand="volkswagen" data-model="amarok" data-cor="Prata" data-ano="2012">
+    <h2>Volkswagen Amarok</h2>
+    <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/198940/2424796/volkswagen-amarok-em-mogi-guacu-sp-f1f30b3d47c-03.jpg" alt="Carro 5">
+    <p>2.0 SE 4X4 CD 16V TURBO INTERCOOLER 4P</p>
+    <button><a href="carros/carros5.html">Mais informações</a></button>
+  </div>
+
+  <div class="car" data-brand="hyundai" data-model="elantra" data-cor="Preto" data-ano="2016">
+    <h2>Hyundai Elantra</h2>
+    <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/21481/3711278/hyundai-elantra-2-0-16v-4p_f5a5106f560.jpeg" alt="Carro 6">
+    <p>2.0 Vision</p>
+    <button><a href="carros/carros6.html">Mais informações</a></button>
+  </div>
+
+  <div class="car" data-brand="citroen" data-model="Xsara Picasso" data-cor="Prata" data-ano="2010">
+    <h2>Citroen Xsara Picasso</h2>
+    <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/233774/3650441/citroen-xsara-em-sao-paulo-sp-f58bb924c4a-00.jpg" alt="Carro 7">
+    <p>2.0 Exclusive</p>
+    <button><a href="carros/carros7.html">Mais informações</a></button>
+  </div>
+
+  <div class="car" data-brand="citroen" data-model="Aircross" data-cor="Vermelho" data-ano="2016">
+    <h2>Citroen Aircross</h2>
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230613/citroen-aircross-1.6-vti-120-flex-live-eat6-wmimagem09473020619.jpg?s=fill&w=1920&h=1440&q=75" alt="Carro 8">
+    <p>1.6 VTI 120 FLEX LIVE EAT6</p>
+    <button> <a href="carros/carros8.html">mais informações</a></button>
+  </div>
+  <div class="car" data-brand="fiat" data-model="500" data-cor="Vermelho" data-ano="2012">
+    <h2>Fiat 500 </h2>
+      <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230507/fiat-500-1.4-cult-8v-flex-2p-manual-wmimagem03293979669.jpg?s=fill&w=1920&h=1440&q=75" alt="Carro 9">
+      <p>1.4 CULT 8V FLEX 2P MANUAL</p>
+      <button> <a href="carros/carros9.html">Mais informações</a></button>
+    </div>
+    <div class="car" data-brand="Chevrolet" data-model="corsa" data-cor="Vermelho" data-ano="2012">
+      <h2> Chevrolet corsa</h2>
+      <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230701/chevrolet-corsa-1.0-mpfi-joy-8v-flex-4p-manual-wmimagem14181519524.jpg?s=fill&w=1920&h=1440&q=75" alt="Carro 10">
+      <p>1.0 MPFI JOY 8V FLEX 4P MANUAL</p>
+      <button><a href="carros/carros10.html">Mais informações</a></button>
+    </div>
+  <div class="car" data-brand="Chevrolet" data-model="cruze" data-cor="Preto" data-ano="2015">
+    <h2> CHEVROLET CRUZE</h2>
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230614/chevrolet-cruze-1.8-lt-16v-flex-4p-automatico-wmimagem15240795465.jpg?s=fill&w=1920&h=1440&q=75" alt="carros 11">
+    <p>1.8 LT 16V FLEX 4P AUTOMÁTICO</p>
+    <button><a href="carros/carros11.html">Mais informações</a></button>
+  </div>
+<div class="car" data-brand="ford" data-model="Mustang" data-cor="Preto" data-ano="2019">
+  <h2>Ford Mustang</h2>
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230620/ford-mustang-5.0-v8-tivct-gasolina-black-shadow-selectshift-wmimagem17313697170.jpg?s=fill&w=1920&h=1440&q=75" alt="carros 12">
+  <p>5.0 V8 TI-VCT GASOLINA BLACK SHADOW SELECTSHIFT</p>
+  <button><a href="carros/carros12.html">mais informações</a></button>
+</div>
+
+<div class="car" data-brand="porsche" data-model="macan" data-cor="Laranja" data-ano="2022">
+  <h2>Porsche macan</h2>
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230530/porsche-macan-2.0-turbo-gasolina-pdk-wmimagem18192314342.jpg?s=fill&w=1920&h=1440&q=75">
+  <p>2.0 TURBO GASOLINA PDK</p>
+  <button><a href="carros/carros13.html">Mais informações</a></button>
+</div>
+<div class="car" data-brand="jeep" data-model="compass" data-cor="Cinza" data-ano="2020">
+  <h2>jeep-compass</h2>
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230628/jeep-compass-2.0-16v-flex-longitude-automatico-wmimagem19110657298.jpg?s=fill&w=1920&h=1440&q=75">
+  <h2>2.0 16V FLEX LONGITUDE AUTOMÁTICO</h2>
+  <button> <a href="carros/carros14.html">Mais informações</a></button>
+</div>
+
+<div class="car" data-brand="citroen" data-model="C3" data-cor="Preto" data-ano="2013">
+  <h2>Citroen C3</h2>
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230602/citroen-c3-1.5-origine-8v-flex-4p-manual-wmimagem14403282236.jpg?s=fill&w=1920&h=1440&q=75">
+  <h2>1.5 ORIGINE 8V FLEX 4P MANUAL</h2>
+  <button><a href="carros/carros15.html">Mais informações</a></button>
+</div>
+<div class="car" data-brand="citroen" data-model="C4 lounge" data-cor="Prata" data-ano="2018">
+  <h2> Citroen C4 lounge</h2>
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/citroen-c4-lounge-1.6-thp-flex-live-bva-wmimagem16085791322.jpg?s=fill&w=1920&h=1440&q=75">
+  <button> <a href="carros/carros17.html">Mais informações</a></button>
+</div>
+<div class="car" data-brand="Bmw" data-model="X6" data-cor="Preto" data-ano="2022">
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230623/bmw-x6-3.0-twinpower-gasolina-xdrive40i-black-vermilion-automatico-wmimagem15173003939.jpg?s=fill&w=1920&h=1440&q=75">
+  <button><a href="carros/carros16.html">Mais informações</a></button>
+</div>
+<div class="car" data-brand="Audi" data-model="A3" data-cor="Cinza" data-ano="2021">
+  <h1> Audi A3</h1>
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230629/audi-a3-1.4-35-tfsi-gasolina-sportback-s-line-limited-tiptronic-wmimagem09302494666.jpg?s=fill&w=1920&h=1440&q=75">
+  <h1>1.4 35 TFSI GASOLINA SPORTBACK S LINE LIMITED TIPTRONIC</h1>
+</div>
+
+<script>
+  const brandFilter = document.getElementById("brand-filter");
+  const modelFilter = document.getElementById("model-filter");
+  const corFilter = document.getElementById("cor"); // Novo filtro por cor
+  const cars = Array.from(document.getElementsByClassName("car"));
+  const anofilter = document.getElementById("ano");
+
+  function filterCars() {
+    const selectedBrand = brandFilter.value;
+    const selectedModel = modelFilter.value;
+    const selectedCor = corFilter.value; // Valor selecionado no filtro de cor
+    const selectedAno = anofilter.value; // Valor selecionado no filtro de ano
+
+    cars.forEach((car) => {
+      const carBrand = car.getAttribute("data-brand");
+      const carModel = car.getAttribute("data-model");
+      const carCor = car.getAttribute("data-cor"); // Cor do carro
+      const carAno = car.getAttribute("data-ano");
+
+      const isVisible =
+        (selectedBrand === "all" || selectedBrand === carBrand) &&
+        (selectedModel === "all" || selectedModel === carModel) &&
+        (selectedCor === "all" || selectedCor === carCor) &&
+        (selectedAno === "all" || selectedAno === carAno); // Verifica se o ano selecionado coincide com o ano do carro
+
+      car.style.display = isVisible ? "block" : "none";
+    });
+  }
+
+  brandFilter.addEventListener("change", filterCars);
+  modelFilter.addEventListener("change", filterCars);
+  corFilter.addEventListener("change", filterCars); // Novo evento para filtrar por cor
+  anofilter.addEventListener("change", filterCars); // Novo evento para filtrar por ano
+</script>
+</body>
+</html>
+

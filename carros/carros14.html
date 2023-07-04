@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jeep Compass</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carro {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .carro h2 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .carro h3 {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .carro p {
+      margin-bottom: 5px;
+    }
+
+    .carro-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+      font-size: 40px;
+      color: #333;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #ff5722;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff7043;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="carro">
+        <h1>Marca:Jeep</h1>
+        <h1>Modelo:Compass</h1>
+        <h1>Ano:2020/2020</h1>
+        <h1>2.0 16V FLEX LONGITUDE AUTOMÁTICO</h1>
+        <h1>Preço:R$117,900</h1>
+        <h1>Quilometragem:52.000</h1>
+        <h1>Cor:Cinza</h1>
+        <h1>Apresentamos o Jeep Compass, um SUV que combina estilo, conforto e capacidade off-road em um pacote excepcional. Com um design marcante, interior espaçoso e tecnologia avançada, o Compass oferece uma experiência de condução versátil e emocionante tanto nas ruas da cidade quanto em aventuras fora de estrada.
+
+            O Jeep Compass impressiona com seu design robusto e atraente. Suas linhas musculosas, grade dianteira distintiva e faróis icônicos capturam a essência aventureira da marca Jeep. Seja enfrentando os desafios urbanos ou explorando trilhas off-road, o Compass está pronto para superar qualquer obstáculo com confiança e estilo.
+            
+            Ao entrar no interior do Compass, você será recebido por um ambiente espaçoso e confortável. Os assentos ergonômicos proporcionam suporte adequado durante toda a viagem, seja em trajetos curtos ou longas viagens. Com espaço amplo para passageiros e bagagem, o Compass é perfeito para acomodar sua família e todas as suas necessidades de carga. Além disso, os recursos de conectividade e entretenimento, como o sistema de infotainment com tela sensível ao toque, mantêm você conectado e entretido durante toda a jornada.
+            
+            Mas o verdadeiro diferencial do Jeep Compass está em sua capacidade off-road. Com sistemas avançados de tração nas quatro rodas e uma suspensão projetada para lidar com terrenos desafiadores, o Compass é capaz de enfrentar qualquer aventura. Seja atravessando lama, subindo colinas íngremes ou explorando trilhas rochosas, o Compass garante que você esteja preparado para qualquer ambiente.
+            
+            Além disso, o Compass está equipado com uma ampla gama de recursos de segurança avançados. Desde freios antibloqueio e controle eletrônico de estabilidade até assistência de frenagem de emergência e monitoramento de ponto cego, o Compass mantém você protegido e seguro durante suas viagens.
+            
+            O Jeep Compass é o SUV perfeito para aqueles que desejam aventurar-se com estilo, conforto e confiabilidade. Venha conhecer o Jeep Compass pessoalmente em nossa concessionária e agende um test-drive. Descubra por que o Compass é a escolha certa para quem busca um veículo que combine o melhor dos mundos urbano e off-road. Prepare-se para explorar novos horizontes com o Jeep Compass./h1>
+       <h1>Vendedor:T Line</h1>
+        <h1>Telefone:(11)4420-7650</h1>
+        <h1> Depois que Pagou,Me chama nesse numero: 11949839198 e manda a foto do carro para eu tirar do ar</h1>
+        <div class="carro-carousel">
+          <div><img class="carro-img" src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230628/jeep-compass-2.0-16v-flex-longitude-automatico-wmimagem19110481123.jpg?s=fill&w=1920&h=1440&q=75" alt="Imagem 1"></div>
+          <div><img class="carro-img" src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230628/jeep-compass-2.0-16v-flex-longitude-automatico-wmimagem19105001151.jpg?s=fill&w=1920&h=1440&q=75" alt="Imagem 2"></div>
+          <div><img class="carro-img" src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230628/jeep-compass-2.0-16v-flex-longitude-automatico-wmimagem19111812717.jpg?s=fill&w=1920&h=1440&q=75" alt="Imagem 3"></div>
+        </div>
+      </div>
+    
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.carro-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<button type="button" class="slick-prev">←</button>',
+            nextArrow: '<button type="button" class="slick-next">→</button>'
+          });
+        });
+      </script>
+    </body>
+    </html>
+   </div>
+  </body>
+</html>

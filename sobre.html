@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capel Car - Sobre</title>
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Estilos do formulário */
+    form {
+      margin-top: 20px;
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Capel Car</h1>
+      <nav>
+        <!-- Links para outras seções do site, como "Início", "Buscar Veículos", etc. -->
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <h2>Sobre a Capel Car</h2>
+      <p>A Capel Car é uma empresa especializada na compra e venda de veículos usados. Nós fornecemos um serviço de avaliação de veículos, ajudando os clientes a obter uma estimativa justa do valor de seus carros.</p>
+
+      <h3>Avalie seu veículo</h3>
+      <p>Se você está interessado em vender seu veículo, preencha o formulário abaixo e nossa equipe entrará em contato com você em breve.</p>
+
+      <!-- Formulário de avaliação de veículo -->
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+
+        <label for="modelo">Modelo do Veículo:</label>
+        <input type="text" id="modelo" name="modelo" required>
+
+        <label for="ano">Ano do Veículo:</label>
+        <input type="text" id="ano" name="ano" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2023 Capel Car. Todos os direitos reservados.</footer>
+  </div>
+</body>
+</html>

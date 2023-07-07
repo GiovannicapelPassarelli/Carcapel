@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audi A3</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carro {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .carro h2 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .carro h3 {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .carro p {
+      margin-bottom: 5px;
+    }
+
+    .carro-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+      font-size: 40px;
+      color: #333;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #ff5722;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff7043;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="carro">
+        <h1>Marca:Honda </h1>
+        <h1>Modelo:Fit</h1>
+        <h1>Ano:2017/2017</h1>
+        <h1>1.5 LX 16V 4P</h1>
+        <h1>Preço:R$80.978</h1>
+        <h1>Quilometragem:69.293Km</h1>
+        <h1>Cor:Azul</h1>
+        <h1>Apresentamos o Honda Fit Azul 2017, um carro compacto que combina versatilidade, conforto e eficiência em um pacote moderno e confiável. Com um design atraente, interior espaçoso e recursos inteligentes, o Fit oferece uma experiência de condução prática e confortável para todas as suas necessidades diárias.
+
+          O Honda Fit 2017 se destaca com seu design contemporâneo e linhas aerodinâmicas. A cor azul vibrante adiciona um toque de personalidade ao veículo, tornando-o ainda mais cativante. Com sua carroceria compacta e proporções equilibradas, o Fit é perfeito para se movimentar pelas ruas da cidade com facilidade e eficiência.
+          
+          Ao entrar no interior do Honda Fit, você será recebido por um ambiente espaçoso e versátil. Os assentos dobráveis Magic Seat™ oferecem múltiplas configurações de ajuste, permitindo que você acomode pessoas e cargas de diferentes tamanhos com facilidade. Com amplo espaço para pernas e cabeças, o Fit proporciona conforto para todos os ocupantes, independentemente do tamanho.
+          
+          O Fit 2017 é conhecido por sua eficiência energética e economia de combustível. Equipado com um motor responsivo e tecnologias avançadas de gerenciamento de combustível, ele oferece um desempenho ágil e eficiente. O câmbio automático proporciona trocas suaves e uma experiência de condução tranquila em qualquer ambiente.
+          
+          Este Honda Fit Azul de 2017 é uma ótima opção para aqueles que valorizam a praticidade e o conforto em um carro compacto. Com uma quilometragem adequada para o ano e um histórico de manutenção cuidadosa, você pode ter confiança em sua qualidade e confiabilidade.
+          
+          Agende uma visita à nossa concessionária e conheça pessoalmente este Honda Fit Azul 2017. Faça um test-drive e descubra como o Fit se adapta perfeitamente ao seu estilo de vida ativo. Não perca a oportunidade de possuir um carro compacto versátil que oferece o equilíbrio perfeito entre eficiência, conforto e estilo.
+            </h1>
+       <h1>Vendedor:CR CAR MULTIMARCAS</h1>
+        <h1>Telefone:(66)2101-7654</h1>
+        <h1> Depois que Pagou,Me chama nesse numero: 11949839198 e manda a foto do carro para eu tirar do ar</h1>
+        <div class="carro-carousel">
+          <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/91937/1123535/honda-fit-em-sao-paulo-sp-ed018bc27d0.jpg" alt="Imagem 1"></div>
+          <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/91937/1123535/honda-fit-em-sao-paulo-sp-ed018bcc274.jpg" alt="Imagem 2"></div>
+          <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/91937/1123535/honda-fit-em-sao-paulo-sp-ed018bcf627.jpg" alt="Imagem 3"></div>
+        </div>
+      </div>]
+      
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carro-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+      });
+    });
+  </script>
+</body>
+</html>

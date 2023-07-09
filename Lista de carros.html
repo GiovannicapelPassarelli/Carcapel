@@ -47,7 +47,7 @@
       padding: 8px 16px;
       border: none;
       border-radius: 3px;
-      background-color: #00d9ff;
+      background-color: #00ff40;
       color: #000000;
       font-size: 14px;
       text-decoration: none;
@@ -88,7 +88,7 @@
 </head> 
 <body>
   <h1>Catálogo de Carros</h1> 
-<ul> <div class="filter-container">
+<ul>  <li><div class="filter-container">
   <label class="filter-label" for="brand-filter">Marca:</label>
   <select id="brand-filter" class="filter-select">
     <option value="all">Todas as marcas</option>
@@ -106,9 +106,9 @@
     <option value="toyota">Toyota</option>
     <option value="volkswagen">Volkswagen</option>
   </select>
-</div>
+</div> </li>
 
-<div class="filter-container">
+ <li> <div class="filter-container">
   <label class="filter-label" for="model-filter">Modelo:</label>
   <select id="model-filter" class="filter-select">
     <option value="all">Todos os modelos</option>
@@ -147,8 +147,8 @@
     <option value="Xsara Picasso">Xsara Picasso</option> 
     <option value="X6">X6</option>
   </select>
-</div>
-<div class="filter-container">
+</div></li>
+ <li><div class="filter-container">
   <label class="filter-label" for="cor">Cor:</label>
   <select id="cor" class="filter-select">
     <option value="all">Todas as cores</option>
@@ -166,7 +166,8 @@
     <option value="Marrom">marrom</option>
   </select>
 </div>
-<div class="filter-container">
+</li>
+ <li><div class="filter-container">
   <label class="filter-label" for="ano">ano</label>
 <select id="ano">
   <option value="all">Todos</option>
@@ -206,10 +207,11 @@
   <option value="2023">2023</option>
   <option value="2024">2024</option>
 </select>
-<div class="filter-container">
+</li>
+ <li><div class="filter-container">
   <label class="filter-label" for="Estado">Estado</label>
   <select class="filter-container" id="Estado">
-    <option value="Todos">todos</option>
+    <option value="all">todos</option>
     <option value="Acre">Acre</option>
     <option value="Alagoas ">Alagoas </option>
     <option value="Amapá ">Amapá </option>
@@ -238,14 +240,14 @@
     <option value="Sergipe ">Sergipe </option>
     <option value="Tocantins ">Tocantins (TO)</option>
 </select>
-</div>
+</div> </li>
 </ul>
  
 </div>
   </div>
   <div class="car" data-brand="jeep" data-model="compass" data-cor="Prata" data-ano="2017" data-estado="Minas Gerais">
     <h2>Jeep Compass</h2>
-    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/jeep-compass-2.0-16v-diesel-longitude-4x4-automatico-wmimagem16480063135.jpg?s=fill&w=552&h=414&q=60" alt="Carro 1">
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/jeep-compass-2.0-16v-diesel-longitude-4x4-automatico-wmimagem16480063135.jpg?s=fill&w=552&h=414&q=60"style="width: 500px; height:500px;" alt="Carro 1">
     <p>Longitude</p>
     <button><a href="carros/carros1.html">Mais informações</a></button>
   </div>
@@ -255,120 +257,120 @@
   
   <div class="car" data-brand="peugeot" data-model="208" data-cor="Prata" data-ano="2023" data-estado="São Paulo">
     <h2>Peugeot 208</h2>
-    <img src="https://localizaseminovos.vtexassets.com/arquivos/ids/70243846/28fc3488-0ae2-42a4-82f3-f50db3f17e31.jpg?v=638188166164930000" alt="Carro 2">
+    <img src="https://localizaseminovos.vtexassets.com/arquivos/ids/70243846/28fc3488-0ae2-42a4-82f3-f50db3f17e31.jpg?v=638188166164930000" style="width: 500px; height:500px;" alt="Carro 2">
     <p>2.6 Alure</p>
     <button><a href="carros/carros2.html">Mais informações</a></button>
   </div>
 
   <div class="car" data-brand="toyota" data-model="corolla" data-cor="Branco" data-ano="2021" data-estado="São Paulo">
     <h2>Toyota Corolla</h2>
-    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230624/toyota-corolla-2.0-vvtie-flex-grs-direct-shift-wmimagem11362847019.jpg?s=fill&w=1920&h=1440&q=75" alt="Carro 3">
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230624/toyota-corolla-2.0-vvtie-flex-grs-direct-shift-wmimagem11362847019.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;" alt="Carro 3">
     <p>2.0 GR-S</p>
     <button><a href="carros/carros3.html">Mais informações</a></button>
   </div>
 
   <div class="car" data-brand="porsche" data-model="718" data-cor="Branco" data-ano="2020" data-estado="São Paulo">
     <h2>Porsche 718</h2>
-    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/porsche-718-2.0-16v-h4-gasolina-boxster-pdk-wmimagem14260617630.jpg?s=fill&w=552&h=414&q=60" alt="Carro 4">
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/porsche-718-2.0-16v-h4-gasolina-boxster-pdk-wmimagem14260617630.jpg?s=fill&w=552&h=414&q=60"style="width: 500px; height:500px;" alt="Carro 4">
     <p>2.0 Boxster</p>
     <button><a href="carros/carros4.html">Mais informações</a></button>
   </div>
 
   <div class="car" data-brand="volkswagen" data-model="amarok" data-cor="Prata" data-ano="2012" data-estado="São Paulo">
     <h2>Volkswagen Amarok</h2>
-    <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/198940/2424796/volkswagen-amarok-em-mogi-guacu-sp-f1f30b3d47c-03.jpg" alt="Carro 5">
+    <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/198940/2424796/volkswagen-amarok-em-mogi-guacu-sp-f1f30b3d47c-03.jpg"style="width: 500px; height:500px;" alt="Carro 5">
     <p>2.0 SE 4X4 CD 16V TURBO INTERCOOLER 4P</p>
     <button><a href="carros/carros5.html">Mais informações</a></button>
   </div>
 
   <div class="car" data-brand="hyundai" data-model="elantra" data-cor="Preto" data-ano="2016" data-estado="São Paulo">
     <h2>Hyundai Elantra</h2>
-    <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/21481/3711278/hyundai-elantra-2-0-16v-4p_f5a5106f560.jpeg" alt="Carro 6">
+    <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/21481/3711278/hyundai-elantra-2-0-16v-4p_f5a5106f560.jpeg"style="width: 500px; height:500px;" alt="Carro 6">
     <p>2.0 Vision</p>
     <button><a href="carros/carros6.html">Mais informações</a></button>
   </div>
 
   <div class="car" data-brand="citroen" data-model="Xsara Picasso" data-cor="Prata" data-ano="2010" data-estado="São Paulo">
     <h2>Citroen Xsara Picasso</h2>
-    <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/233774/3650441/citroen-xsara-em-sao-paulo-sp-f58bb924c4a-00.jpg" alt="Carro 7">
+    <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/233774/3650441/citroen-xsara-em-sao-paulo-sp-f58bb924c4a-00.jpg"style="width: 500px; height:500px;" alt="Carro 7">
     <p>2.0 Exclusive</p>
     <button><a href="carros/carros7.html">Mais informações</a></button>
   </div>
 
   <div class="car" data-brand="citroen" data-model="Aircross" data-cor="Vermelho" data-ano="2016" data-estado="São Paulo">
     <h2>Citroen Aircross</h2>
-    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230613/citroen-aircross-1.6-vti-120-flex-live-eat6-wmimagem09473020619.jpg?s=fill&w=1920&h=1440&q=75" alt="Carro 8">
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230613/citroen-aircross-1.6-vti-120-flex-live-eat6-wmimagem09473020619.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;" alt="Carro 8">
     <p>1.6 VTI 120 FLEX LIVE EAT6</p>
     <button> <a href="carros/carros8.html">mais informações</a></button>
   </div>
   <div class="car" data-brand="fiat" data-model="500" data-cor="Vermelho" data-ano="2012" data-estado="São Paulo">
     <h2>Fiat 500 </h2>
-      <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230507/fiat-500-1.4-cult-8v-flex-2p-manual-wmimagem03293979669.jpg?s=fill&w=1920&h=1440&q=75" alt="Carro 9">
+      <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230507/fiat-500-1.4-cult-8v-flex-2p-manual-wmimagem03293979669.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;" alt="Carro 9">
       <p>1.4 CULT 8V FLEX 2P MANUAL</p>
       <button> <a href="carros/carros9.html">Mais informações</a></button>
     </div>
     <div class="car" data-brand="Chevrolet" data-model="corsa" data-cor="Vermelho" data-ano="2012" data-estado="São Paulo">
       <h2> Chevrolet corsa</h2>
-      <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230701/chevrolet-corsa-1.0-mpfi-joy-8v-flex-4p-manual-wmimagem14181519524.jpg?s=fill&w=1920&h=1440&q=75" alt="Carro 10">
+      <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230701/chevrolet-corsa-1.0-mpfi-joy-8v-flex-4p-manual-wmimagem14181519524.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;" alt="Carro 10">
       <p>1.0 MPFI JOY 8V FLEX 4P MANUAL</p>
       <button><a href="carros/carros10.html">Mais informações</a></button>
     </div>
   <div class="car" data-brand="Chevrolet" data-model="cruze" data-cor="Preto" data-ano="2015" data-estado="São Paulo">
     <h2> CHEVROLET CRUZE</h2>
-    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230614/chevrolet-cruze-1.8-lt-16v-flex-4p-automatico-wmimagem15240795465.jpg?s=fill&w=1920&h=1440&q=75" alt="carros 11">
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230614/chevrolet-cruze-1.8-lt-16v-flex-4p-automatico-wmimagem15240795465.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;" alt="carros 11">
     <p>1.8 LT 16V FLEX 4P AUTOMÁTICO</p>
     <button><a href="carros/carros11.html">Mais informações</a></button>
   </div>
 <div class="car" data-brand="ford" data-model="Mustang" data-cor="Preto" data-ano="2019" data-estado="Minas Gerais">
   <h2>Ford Mustang</h2>
-  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230620/ford-mustang-5.0-v8-tivct-gasolina-black-shadow-selectshift-wmimagem17313697170.jpg?s=fill&w=1920&h=1440&q=75" alt="carros 12">
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230620/ford-mustang-5.0-v8-tivct-gasolina-black-shadow-selectshift-wmimagem17313697170.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;" alt="carros 12">
   <p>5.0 V8 TI-VCT GASOLINA BLACK SHADOW SELECTSHIFT</p>
   <button><a href="carros/carros12.html">mais informações</a></button>
 </div>
 
 <div class="car" data-brand="porsche" data-model="macan" data-cor="Laranja" data-ano="2022" data-estado="São Paulo">
   <h2>Porsche macan</h2>
-  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230530/porsche-macan-2.0-turbo-gasolina-pdk-wmimagem18192314342.jpg?s=fill&w=1920&h=1440&q=75">
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230530/porsche-macan-2.0-turbo-gasolina-pdk-wmimagem18192314342.jpg?s=fill&w=1920&h=1440&q=75" style="width: 500px; height:500px;">
   <p>2.0 TURBO GASOLINA PDK</p>
   <button><a href="carros/carros13.html">Mais informações</a></button>
 </div>
 <div class="car" data-brand="citroen" data-model="C3" data-cor="Preto" data-ano="2013" data-estado="São Paulo">
   <h2>Citroen C3</h2>
-  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230602/citroen-c3-1.5-origine-8v-flex-4p-manual-wmimagem14403282236.jpg?s=fill&w=1920&h=1440&q=75">
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230602/citroen-c3-1.5-origine-8v-flex-4p-manual-wmimagem14403282236.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;">
   <h2>1.5 ORIGINE 8V FLEX 4P MANUAL</h2>
   <button><a href="carros/carros15.html">Mais informações</a></button>
 </div>
 <div class="car" data-brand="citroen" data-model="C4 lounge" data-cor="Prata" data-ano="2018" data-estado="São Paulo">
   <h2> Citroen C4 lounge</h2>
-  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/citroen-c4-lounge-1.6-thp-flex-live-bva-wmimagem16085791322.jpg?s=fill&w=1920&h=1440&q=75">
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/citroen-c4-lounge-1.6-thp-flex-live-bva-wmimagem16085791322.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;">
   <button> <a href="carros/carros17.html">Mais informações</a></button>
 </div>
 <div class="car" data-brand="Bmw" data-model="X6" data-cor="Preto" data-ano="2022" data-estado="Paraná">
-  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230623/bmw-x6-3.0-twinpower-gasolina-xdrive40i-black-vermilion-automatico-wmimagem15173003939.jpg?s=fill&w=1920&h=1440&q=75">
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230623/bmw-x6-3.0-twinpower-gasolina-xdrive40i-black-vermilion-automatico-wmimagem15173003939.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;">
   <button><a href="carros/carros16.html">Mais informações</a></button>
 </div>
 <div class="car" data-brand="Audi" data-model="A3" data-cor="Cinza" data-ano="2021" data-estado="Paraná">
   <h1> Audi A3</h1>
-  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230629/audi-a3-1.4-35-tfsi-gasolina-sportback-s-line-limited-tiptronic-wmimagem09302494666.jpg?s=fill&w=1920&h=1440&q=75">
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230629/audi-a3-1.4-35-tfsi-gasolina-sportback-s-line-limited-tiptronic-wmimagem09302494666.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;">
   <h1>1.4 35 TFSI GASOLINA SPORTBACK S LINE LIMITED TIPTRONIC</h1>
   <button><a href="carros/carros18.html">Mais informações</a></button>
 </div>
 </div>
 <div class="car" data-brand="Honda" data-model="Fit" data-cor="Azul" data-ano="2017" data-estado="São Paulo">
   <h1>Honda Fit</h1>
-  <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/91937/1123535/honda-fit-em-sao-paulo-sp-ed018bbf5cc.jpg">
+  <img src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/91937/1123535/honda-fit-em-sao-paulo-sp-ed018bbf5cc.jpg"style="width: 500px; height:500px;">
   <h1>1.5 LX 16V 4P</h1>
   <button><a href="carros/Carros20.html">Mais informações </a></button>
 </div>
 <div class="car" data-brand="porsche" data-model="911" data-cor="Cinza" data-ano="2022" data-estado="São Paulo">
   <h1> Porsche 911</h1>
-  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230613/porsche-911-3.8-24v-h6-gasolina-turbo-s-pdk-wmimagem10375749724.jpg?s=fill&w=1920&h=1440&q=75">
+  <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230613/porsche-911-3.8-24v-h6-gasolina-turbo-s-pdk-wmimagem10375749724.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;">
   <h1>3.8 24V H6 GASOLINA TURBO S PDK</h1>
   <button><a href="carros/carros21.html">Mais informações</a></button>
 </div>
   <div class="car" data-brand="mercedes" data-model="A35" data-cor="Vermelho" data-ano="2019" data-estado="Paraná">
     <h1>MERCEDES-BENZ A 35 AMG</h1>
-    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230705/mercedesbenz-a-35-amg-2.0-cgi-gasolina-4matic-7gdct-wmimagem13143567654.jpg?s=fill&w=1920&h=1440&q=75">
+    <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230705/mercedesbenz-a-35-amg-2.0-cgi-gasolina-4matic-7gdct-wmimagem13143567654.jpg?s=fill&w=1920&h=1440&q=75"style="width: 500px; height:500px;">
     <h1>2.0 CGI GASOLINA 4MATIC 7G-DCT</h1>
   </div>
 
@@ -424,6 +426,23 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+</body>
+</html>
+  <script>
+    function adicionarAoCarrinho(button) {
+      var car = button.parentNode;
+      var brand = car.getAttribute('data-brand');
+      var model = car.getAttribute('data-model');
+      var cor = car.getAttribute('data-cor');
+      var ano = car.getAttribute('data-ano');
+      var estado = car.getAttribute('data-estado');
 
+      var item = document.createElement('li');
+      item.textContent = brand + ' ' + model + ' - ' + cor + ' (' + ano + ') - ' + estado;
+
+      var carrinho = document.getElementById('carrinho');
+      carrinho.appendChild(item);
+    }
+  </script>
 </body>
 </html>

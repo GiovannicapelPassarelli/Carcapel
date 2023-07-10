@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mercedes-Benz A 250 Sport Turbo</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carro {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .carro h1 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .carro p {
+      margin-bottom: 10px;
+    }
+
+    .carro-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+  </style>
+  <style>
+    .carro-carousel {
+      margin: 0 auto;
+      max-width: 600px; /* Ajuste o valor conforme necessário */
+    }
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      line-height: 1;
+      z-index: 1;
+    }
+    .slick-prev {
+      left: 10px; /* Ajuste a posição horizontal do botão de navegação esquerdo */
+    }
+    .slick-next {
+      right: 10px; /* Ajuste a posição horizontal do botão de navegação direito */
+    }</style>
+</head>
+<body>
+    <h1>Marca: Mercedes-Benz</h1>
+    <h1>Modelo: A 250 Sport Turbo</h1>
+    <h1>Ano: 2016</h1>
+    <h1>Motor: 2.0 CGI Sport Turbo</h1>
+    <h1>Transmissão: Automático</h1>
+    <h1>Cor: Vermelho</h1>
+    <h1>Preço: R$154,990</h1>
+    <div class="carro-carousel">
+        <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3730315/mercedes-benz-a-250-2-0-cgi-sport-turbo-4p_f5b250ffd88.jpeg" alt="Imagem 1">
+        <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3730315/mercedes-benz-a-250-2-0-cgi-sport-turbo-4p_f5b25103327.jpeg" alt="Imagem 2">
+        <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3730315/mercedes-benz-a-250-2-0-cgi-sport-turbo-4p_f5b2510672b.jpeg" alt="Imagem 3">
+      </div>
+    <p>Apresentamos o Mercedes-Benz A 250 Sport Turbo, um hatchback esportivo que combina desempenho, luxo e estilo em um único veículo. Com um motor potente, design marcante e recursos avançados, o A 250 Sport Turbo oferece uma experiência de condução emocionante e confortável.</p>
+    <p>O A 250 Sport Turbo se destaca com seu design esportivo e linhas elegantes. A cor "Outra" adiciona um toque de exclusividade ao veículo, tornando-o ainda mais cativante. Com detalhes distintos, como a grade dianteira, os faróis de LED e as rodas de liga leve, o A 250 Sport Turbo chama a atenção por sua presença marcante nas ruas.</p>
+    <p>A potência do motor 2.0 CGI Sport Turbo proporciona um desempenho excepcional. Combinado com a transmissão automática, o A 250 Sport Turbo oferece trocas de marcha suaves e uma aceleração empolgante. A suspensão esportiva e os freios de alto desempenho garantem um controle preciso e uma dirigibilidade emocionante em curvas e retas.</p>
+    <p>O interior do A 250 Sport Turbo é sofisticado e tecnológico. Os bancos esportivos oferecem conforto e suporte lateral durante a condução dinâmica. O painel de instrumentos digital e o sistema de infotainment proporcionam uma experiência conectada e informativa. Recursos como controle de cruzeiro adaptativo, assistente de estacionamento e sistema de som premium elevam ainda mais o conforto e a conveniência a bordo.</p>
+    <p>O A 250 Sport Turbo é um carro que combina esportividade e luxo. Com espaço suficiente para passageiros e bagagem, ele se adapta a diferentes necessidades. Além disso, recursos de segurança avançados, como controle de estabilidade, sistema de frenagem de emergência e monitoramento de ponto cego, proporcionam tranquilidade ao volante.</p>
+    <h2>Vendedor:Excel Premium - Portão, Curitiba</h2>
+    <h2>Telefone: Não especificado</h2>
+    
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carro-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+      });
+    });
+  </script>
+</body>
+</html>

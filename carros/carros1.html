@@ -75,11 +75,29 @@ Copy code
 .button:hover {
   background-color: #ff7043;
 }
-  </style>
+</style>
+<style>
+  .carro-carousel {
+    margin: 0 auto;
+    max-width: 600px; /* Ajuste o valor conforme necessário */
+  }
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    line-height: 1;
+    z-index: 1;
+  }
+  .slick-prev {
+    left: 10px; /* Ajuste a posição horizontal do botão de navegação esquerdo */
+  }
+  .slick-next {
+    right: 10px; /* Ajuste a posição horizontal do botão de navegação direito */
+  }</style>
 </head>
 <body>
-  <div class="container">
-    <div class="carro">
       <h2>Marca: JEEP</h2>
       <h3>Modelo: COMPASS</h3>
       <h2>Ano: 2017/2018</h2>
@@ -110,14 +128,19 @@ Copy code
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.carro-carousel').slick({
-        dots: true,
-        prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
-        nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
-        adaptiveHeight: true
-      });
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.carro-carousel').slick({
+      dots: true,
+      prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
+      nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
+      adaptiveHeight: true
     });
-  </script>
+  });
+</script>
 </body>
+  </body>
+  

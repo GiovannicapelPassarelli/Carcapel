@@ -69,9 +69,28 @@
       background-color: #ff7043;
     }
   </style>
+  <style>
+    .carro-carousel {
+      margin: 0 auto;
+      max-width: 600px; /* Ajuste o valor conforme necessário */
+    }
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      line-height: 1;
+      z-index: 1;
+    }
+    .slick-prev {
+      left: 10px; /* Ajuste a posição horizontal do botão de navegação esquerdo */
+    }
+    .slick-next {
+      right: 10px; /* Ajuste a posição horizontal do botão de navegação direito */
+    }</style>
 </head>
 <body>
-  <div class="carro">
     <h2>Marca: Chevrolet</h2>
     <h2>Modelo: Corsa</h2>
     <h2>Ano: 2012/2013</h2>

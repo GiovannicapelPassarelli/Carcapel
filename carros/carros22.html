@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Volkswagen Golf GTI TSI</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carro {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .carro h1 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .carro p {
+      margin-bottom: 10px;
+    }
+
+    .carro-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<style>
+  .carro-carousel {
+    margin: 0 auto;
+    max-width: 600px; /* Ajuste o valor conforme necessário */
+  }
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    line-height: 1;
+    z-index: 1;
+  }
+  .slick-prev {
+    left: 10px; /* Ajuste a posição horizontal do botão de navegação esquerdo */
+  }
+  .slick-next {
+    right: 10px; /* Ajuste a posição horizontal do botão de navegação direito */
+  }</style>
+<body>
+    <h1>Marca: Volkswagen</h1>
+    <h1>Modelo: Golf GTI TSI</h1>
+    <h1>Ano: 2015</h1>
+    <h1>Motor: 2.0 16V 230cv</h1>
+    <h1>Transmissão: Automático</h1>
+    <h1>Cor: Cinza</h1>
+    <h1>Preço: R$141,900</h1>
+    <div class="carro-carousel">
+        <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/248827/3652505/volkswagen-golf-2-0-gti-tsi-350-16v-230cv_f57dd5ae2ca.jpeg" alt="Imagem 1">
+        <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/248827/3652505/volkswagen-golf-2-0-gti-tsi-350-16v-230cv_f57dd5b05ac.jpeg" alt="Imagem 2">
+        <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/248827/3652505/volkswagen-golf-2-0-gti-tsi-350-16v-230cv_f57dd5b2326.jpeg" alt="Imagem 3">
+      </div>
+    <p>Apresentamos o Volkswagen Golf GTI TSI, um hatchback esportivo que combina desempenho, estilo e tecnologia em um único veículo. Com um motor potente, design marcante e recursos avançados, o Golf GTI TSI oferece uma experiência de condução emocionante e confortável.</p>
+    <p>O Golf GTI TSI se destaca com seu design esportivo e linhas aerodinâmicas. A cor cinza adiciona um toque de elegância ao veículo, tornando-o ainda mais cativante. Com detalhes distintos, como a grade dianteira exclusiva do GTI, as rodas de liga leve e o acabamento cromado, o Golf GTI TSI chama a atenção por sua presença marcante nas ruas.</p>
+    <p>A potência do motor 2.0 TSI de 230cv proporciona um desempenho excepcional. Combinado com a transmissão automática, o Golf GTI TSI oferece trocas de marcha suaves e uma aceleração empolgante. A suspensão esportiva e os freios de alto desempenho garantem um controle preciso e uma dirigibilidade emocionante em curvas e retas.</p>
+    <p>O interior do Golf GTI TSI é sofisticado e tecnológico. Os bancos esportivos oferecem conforto e suporte lateral durante a condução dinâmica. O painel de instrumentos digital e o sistema de infotainment proporcionam uma experiência conectada e informativa. Recursos como controle de cruzeiro adaptativo, assistente de estacionamento e sistema de som premium elevam ainda mais o conforto e a conveniência a bordo.</p>
+    <p>O Golf GTI TSI é um carro que combina esportividade e praticidade. Com espaço suficiente para passageiros e bagagem, ele se adapta a diferentes necessidades. Além disso, recursos de segurança avançados, como controle de estabilidade, sistema de frenagem de emergência e monitoramento de ponto cego, proporcionam tranquilidade ao volante.</p>
+    <h2>Vendedor: Autodigital Multimarcas</h2>
+    <h2>Telefone: (41)98807-5152</h2>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carro-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+      });
+    });
+  </script>
+</body>
+</html>

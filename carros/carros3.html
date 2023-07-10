@@ -121,4 +121,22 @@ Copy code
       </p>
       <h1>Vendedor: NATTA MOTORS</h1>
       <h1>São Paulo, SP</h1>
-      
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="ZX3L7SZVCETAS" />
+        <input type="hidden" name="currency_code" value="BRL" />
+        <input type="image" src="https://www.paypalobjects.com/pt_BR/i/btn/btn_paynow_SM.gif" border="0" name="submit" title="O PayPal é a forma fácil e segura de pagar suas compras on-line." alt="Comprar agora" />
+      </form>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.carro-carousel').slick({
+            dots: true,
+            prevArrow: '<button type="button" class="slick-prev">←</button>',
+            nextArrow: '<button type="button" class="slick-next">→</button>'
+          });
+        });
+      </script>
+    </body>
+    </html>

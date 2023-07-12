@@ -69,6 +69,28 @@
       padding: 5px;
       border-radius: 3px;
     }
+
+    .select-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .select-button {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      margin-right: 10px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .select-button img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
   </style>
 </head>
 
@@ -89,6 +111,7 @@
       <option value="renault">Renault</option>
       <option value="nissan">Nissan</option>
       <option value="Chevrolet">Chevrolet</option>
+      <option value="Mini">Mini</option>
     </select>
 
     <label for="modelo">Modelo:</label>
@@ -104,6 +127,13 @@
     <label for="cor">Cor:</label>
     <select id="cor" onchange="filterCars()">
       <option value="">Todas</option>
+      <option value="Azul">Azul</option>
+      <option value="Prata">Prata</option>
+      <option value="Branco">Branco</option>
+      <option value="Preto">Preto</option>
+      <option value="Cinza">Cinza</option>
+      <option value="Vermelho">Vermelho</option>
+      <option value="Bege">Bege</option>
     </select>
 
     <label for="estado">Estado:</label>
@@ -113,7 +143,9 @@
       <option value="Paraná">Paraná</option>
       <option value="Santa Catarina">Santa Catarina</option>
     </select>
+  </div>
 
+  <div class="filter-container">
     <label for="categoria">Carroceria:</label>
     <select id="categoria" onchange="filterCars()">
       <option value="">Todas</option>
@@ -122,25 +154,27 @@
       <option value="Coupe">Coupé</option>
       <option value="SUV">SUV</option>
       <option value="Caminhonete">Caminhonete</option>
+      <option value="Minivan">Minivan</option>
     </select>
   </div>
 
   <div id="carros"></div>
 
   <script>
-  var carros = [
-  {
-    brand: "porsche",
-    model: "718",
-    cor: "Branco",
-    ano: "2020",
-    estado: "São Paulo",
-    categoria: "Coupe",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/porsche-718-2.0-16v-h4-gasolina-boxster-pdk-wmimagem14260617630.jpg?s=fill&w=552&h=414&q=60",
-    descricao: "2.0 Boxster",
-    link: "carros/carros4.html"
-  },
-  {
+    var carros = [
+      {
+        brand: "Porsche",
+        model: "718",
+        cor: "Branco",
+        ano: "2020",
+        estado: "São Paulo",
+        categoria: "Coupe",
+        imagem:
+          "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/porsche-718-2.0-16v-h4-gasolina-boxster-pdk-wmimagem14260617630.jpg?s=fill&w=552&h=414&q=60",
+        descricao: "2.0 Boxster",
+        link: "carros/carros4.html"
+      },
+      {
     brand: "volkswagen",
     model: "amarok",
     cor: "Prata",
@@ -406,7 +440,7 @@
   {
   brand: "Chevrolet",
   model: "Camaro",
-  cor: "azul",
+  cor: "Azul",
   ano: "2019",
   estado: "São Paulo",
   categoria: "Coupe",
@@ -435,9 +469,42 @@
   imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/2106/3741943/volkswagen-saveiro-1-6-robust-total-flex-16v_f5b85c46df9.jpeg",
   descricao: "1.6 ROBUST TOTAL FLEX 16V",
   link: "carros/carros32.html"
-}
+},
+{
+  brand:"renault",
+  model: "Clio",
+  cor: "Preto",
+  estado: "São Paulo",
+  ano: "2011",
+  categoria: "hatch",
+  imagem:"https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/279242/3546834/renault-clio-em-sao-paulo-sp-f5a4d4c56d7.jpg",
+  descricao: "1.0 CAMPUS 16V 4P",
+  link: "carros/carros33"
+},
+{
+brand:"volkswagen",
+model: "t-cross",
+cor: "Cinza",
+estado: "Paraná",
+categoria: "SUV",
+ano: "2021",
+imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/2106/3742668/volkswagen-t-cross-1-4-tsi-highline-250-16v-4p_f5b89544fc8.jpeg",
+descricao: "1.4 TSI HIGHLINE 250 16V 4P",
+link: "carros/carros34.html",
+},
+{
+ brand: "Mini",
+ model: "ONE",
+ cor: "Bege",
+ estado: "Paraná",
+ ano: "2021",
+ categoria: "Hatch" ,
+ imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3778879/mini-one-1-6_f5cf02558c4.jpeg",
+ descricao:"1.6",
+ link: "carros/carros35.html",
 
-];
+}
+    ];
 
     var divCarros = document.getElementById("carros");
     var selectMarca = document.getElementById("marca");
@@ -497,7 +564,7 @@
       }
     }
 
-    window.onload = function() {
+    window.onload = function () {
       filterCars();
     };
   </script>

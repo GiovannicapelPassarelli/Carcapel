@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chevrolet Camaro 6.2 SS V8 16V</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carro {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .carro h1 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .carro p {
+      margin-bottom: 10px;
+    }
+
+    .carro-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+  </style>
+  <style>
+    .carro-carousel {
+      margin: 0 auto;
+      max-width: 600px; /* Ajuste o valor conforme necessário */
+    }
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      line-height: 1;
+      z-index: 1;
+    }
+    .slick-prev {
+      left: 10px; /* Ajuste a posição horizontal do botão de navegação esquerdo */
+    }
+    .slick-next {
+      right: 10px; /* Ajuste a posição horizontal do botão de navegação direito */
+    }</style>
+</head>
+<body>
+  <div class="carro">
+    <h1>Marca: Chevrolet</h1>
+    <h1>Modelo: Camaro 6.2 SS V8 16V</h1>
+    <h1>Ano: 2019</h1>
+    <h1>Motor: 6.2 V8</h1>
+    <h1>Transmissão: Automático</h1>
+    <h1>Cor: Azul</h1>
+    <h1>Preço: R$414,890</h1>
+    <div class="carro-carousel">
+      <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/105911/2787096/chevrolet-camaro-6-2-ss-v8-16v-406cv-2019-7ef1ffbc6f5.jpg" alt="Imagem 1">
+      <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/105911/2787096/chevrolet-camaro-6-2-ss-v8-16v-406cv-2019-7ef1ffbca46.jpg" alt="Imagem 2">
+      <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/105911/2787096/chevrolet-camaro-6-2-ss-v8-16v-406cv-2019-7ef1ffbcf77.jpg" alt="Imagem 3">
+    </div>
+    <p>O Chevrolet Camaro 6.2 SS V8 16V é um carro esportivo icônico que combina potência, estilo e desempenho. Com seu motor V8 de 6.2 litros e design marcante, o Camaro oferece uma experiência de condução emocionante.</p>
+    <p>O Camaro 6.2 SS V8 se destaca com sua cor azul vibrante, que adiciona personalidade ao veículo. Seu design agressivo, com linhas musculosas e detalhes aerodinâmicos, transmite uma sensação de poder e esportividade. As rodas de liga leve e o sistema de escapamento esportivo complementam o visual impressionante do carro.</p>
+    <p>O motor V8 de 6.2 litros do Camaro entrega 406 cavalos de potência, proporcionando uma aceleração empolgante. Com sua transmissão automática, você desfruta de trocas de marcha suaves e rápidas, garantindo um desempenho excepcional. A tração traseira do Camaro oferece uma experiência de direção esportiva e dinâmica.</p>
+    <p>O interior do Camaro é projetado com foco no motorista, com todos os controles e instrumentos ao alcance das mãos. Os bancos esportivos oferecem suporte lateral e conforto durante a condução. Recursos tecnológicos, como sistema de som premium e sistema de navegação, garantem uma experiência completa dentro do veículo.</p>
+    <h2>Vendedor: Não especificado</h2>
+    <h2>Telefone: Não especificado</h2>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carro-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+      });
+    });
+  </script>
+</body>
+</html>

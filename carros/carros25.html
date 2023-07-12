@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mercedes-Benz GLC 43 AMG</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carro {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .carro h1 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .carro p {
+      margin-bottom: 10px;
+    }
+
+    .carro-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+  </style>
+  <style>
+    .carro-carousel {
+      margin: 0 auto;
+      max-width: 600px; /* Ajuste o valor conforme necessário */
+    }
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      line-height: 1;
+      z-index: 1;
+    }
+    .slick-prev {
+      left: 10px; /* Ajuste a posição horizontal do botão de navegação esquerdo */
+    }
+    .slick-next {
+      right: 10px; /* Ajuste a posição horizontal do botão de navegação direito */
+    }</style>
+</head>
+<body>
+  <div class="carro">
+    <h1>Marca: Mercedes-Benz</h1>
+    <h1>Modelo: GLC 43 AMG</h1>
+    <h1>Ano: 2017</h1>
+    <h1>Motor: 3.0 Bi-Turbo V6 367cv</h1>
+    <h1>Transmissão: Automático</h1>
+    <h1>Cor: Cinza</h1>
+    <h1>Preço: R$328,900</h1>
+    <div class="carro-carousel">
+      <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/33185/3649866/mercedes-benz-glc-43-amg-3-0-bi-turbo-v6-367cv-4p_f57b7663b05.jpg" alt="Imagem 1">
+      <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/33185/3649866/mercedes-benz-glc-43-amg-3-0-bi-turbo-v6-367cv-4p_f57b766b57e.jpg" alt="Imagem 2">
+      <img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/33185/3649866/mercedes-benz-glc-43-amg-3-0-bi-turbo-v6-367cv-4p_f57b7672a0e.jpg" alt="Imagem 3">
+    </div>
+    <p>Apresentamos o Mercedes-Benz GLC 43 AMG, um SUV esportivo que combina luxo, desempenho e estilo em um único veículo. Com um motor potente, design imponente e recursos avançados, o GLC 43 AMG oferece uma experiência de condução emocionante e confortável.</p>
+    <p>O GLC 43 AMG se destaca com seu design esportivo e linhas elegantes. A cor "Cinza" adiciona um toque de exclusividade ao veículo, tornando-o ainda mais cativante. Com detalhes distintos, como a grade dianteira AMG, as saídas de ar esportivas e as rodas de liga leve, o GLC 43 AMG chama a atenção por sua presença marcante nas ruas.</p>
+    <p>A potência do motor 3.0 Bi-Turbo V6 de 367cv proporciona um desempenho excepcional. Combinado com a transmissão automática, o GLC 43 AMG oferece trocas de marcha suaves e uma aceleração empolgante. A tração nas quatro rodas 4MATIC e a suspensão esportiva garantem um controle preciso e uma dirigibilidade emocionante em diferentes terrenos.</p>
+    <p>O interior do GLC 43 AMG é luxuoso e tecnológico. Os bancos esportivos revestidos em couro oferecem conforto e suporte lateral durante a condução dinâmica. O painel de instrumentos digital e o sistema de infotainment proporcionam uma experiência conectada e informativa. Recursos como controle de cruzeiro adaptativo, assistente de estacionamento e sistema de som premium elevam ainda mais o conforto e a conveniência a bordo.</p>
+    <p>O GLC 43 AMG é um SUV que combina esportividade e luxo. Com espaço suficiente para passageiros e bagagem, ele se adapta a diferentes necessidades. Além disso, recursos de segurança avançados, como controle de estabilidade, sistema de frenagem de emergência e monitoramento de ponto cego, proporcionam tranquilidade ao volante.</p>
+    <h2>Vendedor: Zilli Veículos</h2>
+    <h2>Telefone: Não especificado</h2>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="FTNZSECQTYWLG" />
+      <input type="hidden" name="currency_code" value="USD" />
+      <input type="image" src="https://www.paypalobjects.com/pt_BR/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="O PayPal é a forma fácil e segura de pagar suas compras on-line." alt="Comprar agora" />
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carro-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+      });
+    });
+  </script>
+</body>
+</html>

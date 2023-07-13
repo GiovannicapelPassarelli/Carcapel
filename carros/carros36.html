@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chevrolet S10</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .car {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .car h2 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .car img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 20px auto;
+    }
+
+    .car p {
+      margin-bottom: 5px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #ff5722;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff7043;
+    }
+  </style>
+</head>
+<body>
+  <div class="car">
+    <h2>Marca: Chevrolet</h2>
+    <h2>Modelo: S10</h2>
+    <h2>Ano: 2018</h2>
+    <p>Preço: R$ 189.900,00</p>
+    <p>Cor: Prata</p>
+    <h3>Título: Chevrolet S10 - A Picape Robusta com Tecnologia Avançada</h3>
+    <h3>Descrição: Conheça a Chevrolet S10, uma picape robusta e versátil que combina força e tecnologia. Com seu design imponente, amplo espaço interno e recursos avançados, a S10 é perfeita para quem busca uma picape confiável e confortável para enfrentar qualquer desafio.</h3>
+    <h3>A Chevrolet S10 se destaca pelo seu visual robusto e acabamento de alta qualidade. Sua carroceria na cor prata transmite uma imagem de elegância e sofisticação. Com capacidade para transportar cargas pesadas e enfrentar terrenos desafiadores, a S10 é uma picape preparada para o trabalho duro.</h3>
+    <h3>No interior da S10, você encontrará um espaço espaçoso e confortável. Os bancos ergonômicos proporcionam um excelente suporte, mesmo em viagens longas. Além disso, a S10 está equipada com uma variedade de recursos de tecnologia, como sistema de infotainment com tela sensível ao toque e conectividade Bluetooth, garantindo uma experiência moderna e conveniente.</h3>
+    <h3>A Chevrolet S10 também oferece um desempenho excepcional. Equipada com um motor turbo intercooler de 2.8 litros, ela proporciona uma combinação perfeita de potência e eficiência. Sua tração 4x4 garante uma condução estável e segura em diferentes tipos de terreno. Com a S10, você pode enfrentar qualquer desafio com confiança.</h3>
+    <h3>Se você está procurando uma picape confiável e tecnologicamente avançada, a Chevrolet S10 é a escolha certa. Agende um test drive e experimente toda a potência e conforto que essa picape tem a oferecer. Não perca a oportunidade de possuir uma S10 em excelente estado e com um ótimo preço.</h3>
+    <h2>Vendedor: Cadillac Automoveis</h2>
+    <h2>Telefone: (41) 3029-4330</h2>
+    <div class="carro-carousel">
+      <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/340020/3704229/chevrolet-s10-em-curitiba-pr-f5a18020c4f-07.jpg" alt="Imagem 1"></div>
+      <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/340020/3704229/chevrolet-s10-em-curitiba-pr-f5a18020c4f-03.jpg" alt="Imagem 2"></div>
+      <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/340020/3704229/chevrolet-s10-em-curitiba-pr-f5a18020c4f-11.jpg" alt="Imagem 3"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carro-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+      });
+    });
+    

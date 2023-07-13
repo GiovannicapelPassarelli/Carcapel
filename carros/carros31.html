@@ -88,13 +88,27 @@
     <p>
       Este modelo específico está na cor prata e encontra-se em bom estado de conservação. Com apenas 63.000 km rodados, ainda tem muita vida útil pela frente. Não perca a oportunidade de adquirir este Nissan Tiida por um preço atrativo.
     </p>
-    <h2>Vendedor: Chaves na Mão - Curitiba, PR</h2>
-    <h2>Telefone: (41) 3333-3333</h2>
+    <h2>Vendedor:necxmotors</h2>
+    <h2>Telefone: (41)3020-8888</h2>
     <div class="carro-carousel">
       <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3770381/nissan-tiida-1-8-sl-16v-4p_f5cb6a69b61.jpg" alt="Imagem 1"></div>
       <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3770381/nissan-tiida-1-8-sl-16v-4p_f5cb6a6a88b.jpg" alt="Imagem 2"></div>
       <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3770381/nissan-tiida-1-8-sl-16v-4p_189457711a7.jpg" alt="Imagem 3"></div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carro-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+      });
+    });
+  </script> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>

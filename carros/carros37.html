@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audi Q3</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .car {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .car h2 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .car img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 20px auto;
+    }
+
+    .car p {
+      margin-bottom: 5px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #ff5722;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff7043;
+    }
+  </style>
+</head>
+<body>
+  <div class="car">
+    <h2>Marca: Audi</h2>
+    <h2>Modelo: Q3</h2>
+    <h2>Ano: 2019</h2>
+    <p>Preço: R$ 149.900,00</p>
+    <p>Cor: Preta</p>
+    <h3>Título: Audi Q3 - O SUV Premium com Desempenho e Estilo</h3>
+    <h3>Descrição: Conheça o Audi Q3, um SUV premium que combina desempenho, conforto e estilo em um único veículo. Com um design elegante, tecnologia avançada e acabamento de alta qualidade, o Q3 é perfeito para aqueles que buscam uma experiência de condução excepcional.</h3>
+    <h3>O Audi Q3 destaca-se pelo seu visual sofisticado e linhas aerodinâmicas. Com sua carroceria na cor preta, ele transmite uma imagem de elegância e esportividade. Seu interior luxuoso e bem projetado oferece conforto e espaço para todos os ocupantes, além de uma variedade de recursos tecnológicos que proporcionam uma experiência de condução moderna e conveniente.</h3>
+    <h3>O desempenho do Audi Q3 é impressionante. Equipado com um motor 1.4 TFSI, ele oferece uma combinação perfeita de potência e eficiência. Sua transmissão automática garante trocas suaves e precisas, enquanto a tração nas quatro rodas proporciona estabilidade e segurança em diferentes condições de estrada.</h3>
+    <h3>O Audi Q3 também está equipado com uma variedade de recursos de segurança e assistência ao motorista, como sistema de frenagem de emergência, controle de estabilidade e assistente de estacionamento. Além disso, conta com uma ampla gama de recursos de entretenimento, como sistema de som premium e conectividade Bluetooth.</h3>
+    <h3>Não perca a oportunidade de possuir um Audi Q3 2019 em  excelente estado e com um ótimo preço. Agende um test drive e experimente toda a sofisticação e desempenho que esse SUV premium tem a oferecer.</h3>
+    <h2>Vendedor: Carangos Multimarcas</h2>
+    <h2>Telefone: (11) 1234-5678</h2>
+    <div class="carro-carousel">
+      <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/51017/2108046/audi-q3-1-4-tfsi-prestige-4p_f19f5fceacf.jpeg" alt="Imagem 1"></div>
+      <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/51017/2108046/audi-q3-1-4-tfsi-prestige-4p_f19f5fdb9a9.jpeg" alt="Imagem 2"></div>
+      <div><img class="carro-img" src="https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/51017/2108046/audi-q3-1-4-tfsi-prestige-4p_f19f5fe7caa.jpeg" alt="Imagem 3"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+      $('.carro-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+      });
+    });
+  </script> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

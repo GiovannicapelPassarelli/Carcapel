@@ -44,6 +44,8 @@
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      position: absolute;
+      
     }
 
     .car button:hover {
@@ -95,7 +97,7 @@
 </head>
 
 <body>
-  <h1>Catálogo de Carros</h1>
+  <h1>Veja os vendedores</h1>
 
   <div class="filter-container">
     <label for="marca">Marca:</label>
@@ -122,6 +124,43 @@
     <label for="ano">Ano:</label>
     <select id="ano" onchange="filterCars()">
       <option value="">Todos</option>
+      <option value="1987">1987</option>
+      <option value="1988">1988</option>
+      <option value="1989">1989</option>
+      <option value="1990">1990</option>
+      <option value="1991">1991</option>
+      <option value="1992">1992</option>
+      <option value="1993">1993</option>
+      <option value="1994">1994</option>
+      <option value="1995">1995</option>
+      <option value="1996">1996</option>
+      <option value="1997">1997</option>
+      <option value="1998">1998</option>
+      <option value="1999">1999</option>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <option value="2003">2003</option>
+      <option value="2004">2004</option>
+      <option value="2005">2005</option>
+      <option value="2006">2006</option>
+      <option value="2007">2007</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
     </select>
 
     <label for="cor">Cor:</label>
@@ -142,6 +181,7 @@
       <option value="São Paulo">São Paulo</option>
       <option value="Paraná">Paraná</option>
       <option value="Santa Catarina">Santa Catarina</option>
+      <option value="Minas Gerais">Minas Gerais</option>
     </select>
   </div>
 
@@ -163,7 +203,7 @@
   <script>
     var carros = [
       {
-        brand: "Porsche",
+        brand: "porsche",
         model: "718",
         cor: "Branco",
         ano: "2020",
@@ -175,336 +215,336 @@
         link: "carros/carros4.html"
       },
       {
-    brand: "volkswagen",
-    model: "amarok",
-    cor: "Prata",
-    ano: "2012",
-    estado: "São Paulo",
-    categoria: "Caminhonete",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/198940/2424796/volkswagen-amarok-em-mogi-guacu-sp-f1f30b3d47c-03.jpg",
-    descricao: "2.0 SE 4X4 CD 16V TURBO INTERCOOLER 4P",
-    link: "carros/carros5.html"
-  },
-  {
-    brand: "hyundai",
-    model: "elantra",
-    cor: "Preto",
-    ano: "2016",
-    estado: "São Paulo",
-    categoria: "Sedan",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/21481/3711278/hyundai-elantra-2-0-16v-4p_f5a5106f560.jpeg",
-    descricao: "2.0 Vision",
-    link: "carros/carros6.html"
-  },
-  {
-    brand: "Citroen",
-    model: "Xsara Picasso",
-    cor: "Prata",
-    ano: "2010",
-    estado: "São Paulo",
-    categoria: "Minivan",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/233774/3650441/citroen-xsara-em-sao-paulo-sp-f58bb924c4a-00.jpg",
-    descricao: "2.0 Exclusive",
-    link: "carros/carros7.html"
-  },
-  {
-    brand: "Citroen",
-    model: "Aircross",
-    cor: "Vermelho",
-    ano: "2016",
-    estado: "São Paulo",
-    categoria: "SUV",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230613/citroen-aircross-1.6-vti-120-flex-live-eat6-wmimagem09473020619.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "1.6 VTI 120 FLEX LIVE EAT6",
-    link: "carros/carros8.html"
-  },
-  {
-    brand: "fiat",
-    model: "500",
-    cor: "Vermelho",
-    ano: "2012",
-    estado: "São Paulo",
-    categoria: "Hatch",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230507/fiat-500-1.4-cult-8v-flex-2p-manual-wmimagem03293979669.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "1.4 CULT 8V FLEX 2P MANUAL",
-    link: "carros/carros9.html"
-  },
-  {
-    brand: "Chevrolet",
-    model: "corsa",
-    cor: "Vermelho",
-    ano: "2012",
-    estado: "São Paulo",
-    categoria: "Hatch",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230701/chevrolet-corsa-1.0-mpfi-joy-8v-flex-4p-manual-wmimagem14181519524.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "1.0 MPFI JOY 8V FLEX 4P MANUAL",
-    link: "carros/carros10.html"
-  },
-  {
-    brand: "Chevrolet",
-    model: "cruze",
-    cor: "Preto",
-    ano: "2015",
-    estado: "São Paulo",
-    categoria: "Sedan",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230614/chevrolet-cruze-1.8-lt-16v-flex-4p-automatico-wmimagem15240795465.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "1.8 LT 16V FLEX 4P AUTOMÁTICO",
-    link: "carros/carros11.html"
-  },
-  {
-    brand: "ford",
-    model: "Mustang",
-    cor: "Preto",
-    ano: "2019",
-    estado: "Minas Gerais",
-    categoria: "Coupe",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230620/ford-mustang-5.0-v8-tivct-gasolina-black-shadow-selectshift-wmimagem17313697170.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "5.0 V8 TI-VCT GASOLINA BLACK SHADOW SELECTSHIFT",
-    link: "carros/carros12.html"
-  },
-  {
-    brand: "porsche",
-    model: "macan",
-    cor: "Laranja",
-    ano: "2022",
-    estado: "São Paulo",
-    categoria: "SUV",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230530/porsche-macan-2.0-turbo-gasolina-pdk-wmimagem18192314342.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "2.0 TURBO GASOLINA PDK",
-    link: "carros/carros13.html"
-  },
-  {
-    brand: "Citroen",
-    model: "C3",
-    cor: "Preto",
-    ano: "2013",
-    estado: "São Paulo",
-    categoria: "Hatch",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230527/citroen-c3-1.4-i-glx-8v-flex-4p-manual-wmimagem04131270538.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "1.4 i GLX 8V FLEX 4P MANUAL",
-    link: "carros/carros14.html"
-  },
-  {
-    brand: "Citroen",
-    model: "C4 lounge",
-    cor: "Prata",
-    ano: "2018",
-    estado: "São Paulo",
-    categoria: "Sedan",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/citroen-c4-lounge-1.6-thp-flex-live-bva-wmimagem16085791322.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "1.6 THP FLEX LIVE BVA",
-    link: "carros/carros17.html"
-  },
-  {
-    brand: "Bmw",
-    model: "X6",
-    cor: "Preto",
-    ano: "2022",
-    estado: "Paraná",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230623/bmw-x6-3.0-twinpower-gasolina-xdrive40i-black-vermilion-automatico-wmimagem15173003939.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "3.0 TwinPower Gasolina xDrive40i Black Vermilion Automático",
-    link: "carros/carros16.html"
-  },
-  {
-    brand: "Audi",
-    model: "A3",
-    cor: "Cinza",
-    ano: "2021",
-    estado: "Paraná",
-    categoria: "Hatch",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230629/audi-a3-1.4-35-tfsi-gasolina-sportback-s-line-limited-tiptronic-wmimagem09302494666.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "1.4 35 TFSI GASOLINA SPORTBACK S LINE LIMITED TIPTRONIC",
-    link: "carros/carros18.html"
-  },
-  {
-    brand: "Honda",
-    model: "Fit",
-    cor: "Azul",
-    ano: "2017",
-    estado: "São Paulo",
-    categoria: "Hatch",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/91937/1123535/honda-fit-em-sao-paulo-sp-ed018bbf5cc.jpg",
-    descricao: "1.5 LX 16V 4P",
-    link: "carros/Carros20.html"
-  },
-  {
-    brand: "porsche",
-    model: "911",
-    cor: "Cinza",
-    ano: "2022",
-    estado: "São Paulo",
-    categoria: "Coupe",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230613/porsche-911-3.8-24v-h6-gasolina-turbo-s-pdk-wmimagem10375749724.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "3.8 24V H6 GASOLINA TURBO S PDK",
-    link: "carros/carros21.html"
-  },
-  {
-    brand: "mercedes",
-    model: "A35",
-    cor: "Vermelho",
-    ano: "2019",
-    estado: "Paraná",
-    categoria: "Hatch",
-    imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230705/mercedesbenz-a-35-amg-2.0-cgi-gasolina-4matic-7gdct-wmimagem13143567654.jpg?s=fill&w=1920&h=1440&q=75",
-    descricao: "2.0 CGI GASOLINA 4MATIC 7G-DCT",
-    link: "carros/carros20.html"
-  },
-  {
-    brand: "volkswagen",
-    model: "Golf",
-    cor: "Cinza",
-    ano: "2015",
-    estado: "Paraná",
-    categoria: "Hatch",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/248827/3652505/volkswagen-golf-2-0-gti-tsi-350-16v-230cv_f57dd5aa48d.jpeg",
-    descricao: "2.0 GTI TSI 350 16V 230cv",
-    link: "carros/carros22.html"
-  },
-  {
-    brand: "mercedes",
-    model: "A250",
-    cor: "Vermelho",
-    ano: "2016",
-    estado: "Paraná",
-    categoria: "Hatch",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3730315/mercedes-benz-a-250-2-0-cgi-sport-turbo-4p_f5b250fddb2.jpg",
-    descricao: "2.0 CGI SPORT TURBO 4P",
-    link: "carros/carros23.html"
-  },
-  {
-    brand: "Chevrolet",
-    model: "cruze",
-    cor: "Prata",
-    ano: "2019",
-    estado: "Santa Catarina",
-    categoria: "Hatch",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/27194/3222013/chevrolet-cruze-1-4-lt-sport-turbo-16v-4p_f5b5a7c7519.jpg",
-    descricao: "1.4 LT SPORT TURBO 16V 4P",
-    link: "carros/carros23.html"
-  },
-  {
-    brand: "mercedes",
-    model: "GLC",
-    cor: "cinza",
-    ano: "2017",
-    estado: "Santa Catarina",
-    categoria: "SUV",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/33185/3649866/mercedes-benz-glc-43-amg-3-0-bi-turbo-v6-367cv-4p_f57b7660f34.jpg",
-    descricao: "3.0 BI-TURBO V6 367cv 4P",
-    link: "carros/carros25.html"
-  },
-  {
-    brand: "Bmw",
-    model: "M2",
-    cor: "Azul",
-    ano: "2019",
-    estado: "Paraná",
-    categoria: "Coupe",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/99575/3626893/bmw-m2-3-0-competition-bi-turbo-410cv_f571c25a44f.jpeg",
-    descricao: "3.0 COMPETITION BI TURBO 410cv",
-    link: "carros/carros26.html"
-  },
-  {
-    brand: "renault",
-    model: "sandeiro",
-    cor: "Preto",
-    ano: "2011",
-    estado: "Paraná",
-    categoria: "Hatch",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/21481/3727942/renault-sandero-1-6-expression-16v-4p_f5b1f9ac102.jpeg",
-    descricao: "1.6 EXPRESSION 16V 4P",
-    link: "carros/carros27.html"
-  },
-  {
-    brand: "nissan",
-    model: "frotiner",
-    cor: "cinza",
-    ano: "2010",
-    estado: "São Paulo",
-    categoria: "Caminhonete",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/90917/2309082/nissan-frontier-em-botucatu-sp-f189459b778.jpg",
-    descricao: "2.5 LE 4X4 CD TURBO ELETRONIC 4P",
-    link: "carros/carros28.html"
-  },
-  {
-    brand: "Chevrolet",
-    model: "Camaro",
-    cor: "Amarelo",
-    ano: "2014",
-    estado: "São Paulo",
-    categoria: "Coupe",
-    imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/90917/2004638/chevrolet-camaro-em-botucatu-sp-f15a760db81.jpg",
-    descricao: "6.2 SS V8 16V 406cv",
-    link: ""
-  },
-  {
-  brand: "Chevrolet",
-  model: "Camaro",
-  cor: "Azul",
-  ano: "2019",
-  estado: "São Paulo",
-  categoria: "Coupe",
-  imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/45388/2787096/chevrolet-camaro-6-2-ss-v8-16v-406cv_f5a16fc78ad.jpg",
-  descricao: "6.2 SS V8 16V 406cv",
-  link: "carros/carros30.html"
-},
-{
-  brand: "nissan",
-  model: "Tiida",
-  cor: "Prata",
-  ano: "2013",
-  estado: "Paraná",
-  categoria: "Hatch",
-  imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3770381/nissan-tiida-1-8-sl-16v-4p_f5cb6a6936a.jpg",
-  descricao: "1.8 SL 16V 4P",
-  link: "carros/carros31.html"
-},
-{
-  brand:"volkswagen",
-  model: "Saveiro",
-  cor: "Branco",
-  estado: "Paraná",
-  ano: "2023",
-  categoria:"Caminhonete",
-  imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/2106/3741943/volkswagen-saveiro-1-6-robust-total-flex-16v_f5b85c46df9.jpeg",
-  descricao: "1.6 ROBUST TOTAL FLEX 16V",
-  link: "carros/carros32.html"
-},
-{
-  brand:"renault",
-  model: "Clio",
-  cor: "Preto",
-  estado: "São Paulo",
-  ano: "2011",
-  categoria: "hatch",
-  imagem:"https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/279242/3546834/renault-clio-em-sao-paulo-sp-f5a4d4c56d7.jpg",
-  descricao: "1.0 CAMPUS 16V 4P",
-  link: "carros/carros33"
-},
-{
-brand:"volkswagen",
-model: "t-cross",
-cor: "Cinza",
-estado: "Paraná",
-categoria: "SUV",
-ano: "2021",
-imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/2106/3742668/volkswagen-t-cross-1-4-tsi-highline-250-16v-4p_f5b89544fc8.jpeg",
-descricao: "1.4 TSI HIGHLINE 250 16V 4P",
-link: "carros/carros34.html",
-},
-{
- brand: "Mini",
- model: "ONE",
- cor: "Bege",
- estado: "Paraná",
- ano: "2021",
- categoria: "Hatch" ,
- imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3778879/mini-one-1-6_f5cf02558c4.jpeg",
- descricao:"1.6",
- link: "carros/carros35.html",
+        brand: "volkswagen",
+        model: "amarok",
+        cor: "Prata",
+        ano: "2012",
+        estado: "São Paulo",
+        categoria: "Caminhonete",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/198940/2424796/volkswagen-amarok-em-mogi-guacu-sp-f1f30b3d47c-03.jpg",
+        descricao: "2.0 SE 4X4 CD 16V TURBO INTERCOOLER 4P",
+        link: "carros/carros5.html"
+      },
+      {
+        brand: "hyundai",
+        model: "elantra",
+        cor: "Preto",
+        ano: "2016",
+        estado: "São Paulo",
+        categoria: "Sedan",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/21481/3711278/hyundai-elantra-2-0-16v-4p_f5a5106f560.jpeg",
+        descricao: "2.0 Vision",
+        link: "carros/carros6.html"
+      },
+      {
+        brand: "Citroen",
+        model: "Xsara Picasso",
+        cor: "Prata",
+        ano: "2010",
+        estado: "São Paulo",
+        categoria: "Minivan",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/233774/3650441/citroen-xsara-em-sao-paulo-sp-f58bb924c4a-00.jpg",
+        descricao: "2.0 Exclusive",
+        link: "carros/carros7.html"
+      },
+      {
+        brand: "Citroen",
+        model: "Aircross",
+        cor: "Vermelho",
+        ano: "2016",
+        estado: "São Paulo",
+        categoria: "SUV",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230613/citroen-aircross-1.6-vti-120-flex-live-eat6-wmimagem09473020619.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "1.6 VTI 120 FLEX LIVE EAT6",
+        link: "carros/carros8.html"
+      },
+      {
+        brand: "fiat",
+        model: "500",
+        cor: "Vermelho",
+        ano: "2012",
+        estado: "São Paulo",
+        categoria: "Hatch",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230507/fiat-500-1.4-cult-8v-flex-2p-manual-wmimagem03293979669.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "1.4 CULT 8V FLEX 2P MANUAL",
+        link: "carros/carros9.html"
+      },
+      {
+        brand: "Chevrolet",
+        model: "corsa",
+        cor: "Vermelho",
+        ano: "2012",
+        estado: "São Paulo",
+        categoria: "Hatch",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230701/chevrolet-corsa-1.0-mpfi-joy-8v-flex-4p-manual-wmimagem14181519524.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "1.0 MPFI JOY 8V FLEX 4P MANUAL",
+        link: "carros/carros10.html"
+      },
+      {
+        brand: "Chevrolet",
+        model: "cruze",
+        cor: "Preto",
+        ano: "2015",
+        estado: "São Paulo",
+        categoria: "Sedan",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230614/chevrolet-cruze-1.8-lt-16v-flex-4p-automatico-wmimagem15240795465.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "1.8 LT 16V FLEX 4P AUTOMÁTICO",
+        link: "carros/carros11.html"
+      },
+      {
+        brand: "ford",
+        model: "Mustang",
+        cor: "Preto",
+        ano: "2019",
+        estado: "Minas Gerais",
+        categoria: "Coupe",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230620/ford-mustang-5.0-v8-tivct-gasolina-black-shadow-selectshift-wmimagem17313697170.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "5.0 V8 TI-VCT GASOLINA BLACK SHADOW SELECTSHIFT",
+        link: "carros/carros12.html"
+      },
+      {
+        brand: "porsche",
+        model: "macan",
+        cor: "Laranja",
+        ano: "2022",
+        estado: "São Paulo",
+        categoria: "SUV",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230530/porsche-macan-2.0-turbo-gasolina-pdk-wmimagem18192314342.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "2.0 TURBO GASOLINA PDK",
+        link: "carros/carros13.html"
+      },
+      {
+        brand: "Citroen",
+        model: "C3",
+        cor: "Preto",
+        ano: "2013",
+        estado: "São Paulo",
+        categoria: "Hatch",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202305/20230527/citroen-c3-1.4-i-glx-8v-flex-4p-manual-wmimagem04131270538.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "1.4 i GLX 8V FLEX 4P MANUAL",
+        link: "carros/carros14.html"
+      },
+      {
+        brand: "Citroen",
+        model: "C4 lounge",
+        cor: "Prata",
+        ano: "2018",
+        estado: "São Paulo",
+        categoria: "Sedan",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/citroen-c4-lounge-1.6-thp-flex-live-bva-wmimagem16085791322.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "1.6 THP FLEX LIVE BVA",
+        link: "carros/carros17.html"
+      },
+      {
+        brand: "Bmw",
+        model: "X6",
+        cor: "Preto",
+        ano: "2022",
+        estado: "Paraná",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230623/bmw-x6-3.0-twinpower-gasolina-xdrive40i-black-vermilion-automatico-wmimagem15173003939.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "3.0 TwinPower Gasolina xDrive40i Black Vermilion Automático",
+        link: "carros/carros16.html"
+      },
+      {
+        brand: "Audi",
+        model: "A3",
+        cor: "Cinza",
+        ano: "2021",
+        estado: "Paraná",
+        categoria: "Hatch",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230629/audi-a3-1.4-35-tfsi-gasolina-sportback-s-line-limited-tiptronic-wmimagem09302494666.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "1.4 35 TFSI GASOLINA SPORTBACK S LINE LIMITED TIPTRONIC",
+        link: "carros/carros18.html"
+      },
+      {
+        brand: "Honda",
+        model: "Fit",
+        cor: "Azul",
+        ano: "2017",
+        estado: "São Paulo",
+        categoria: "Hatch",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/91937/1123535/honda-fit-em-sao-paulo-sp-ed018bbf5cc.jpg",
+        descricao: "1.5 LX 16V 4P",
+        link: "carros/Carros20.html"
+      },
+      {
+        brand: "porsche",
+        model: "911",
+        cor: "Cinza",
+        ano: "2022",
+        estado: "São Paulo",
+        categoria: "Coupe",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230613/porsche-911-3.8-24v-h6-gasolina-turbo-s-pdk-wmimagem10375749724.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "3.8 24V H6 GASOLINA TURBO S PDK",
+        link: "carros/carros21.html"
+      },
+      {
+        brand: "mercedes",
+        model: "A35",
+        cor: "Vermelho",
+        ano: "2019",
+        estado: "Paraná",
+        categoria: "Hatch",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230705/mercedesbenz-a-35-amg-2.0-cgi-gasolina-4matic-7gdct-wmimagem13143567654.jpg?s=fill&w=1920&h=1440&q=75",
+        descricao: "2.0 CGI GASOLINA 4MATIC 7G-DCT",
+        link: "carros/carros20.html"
+      },
+      {
+        brand: "volkswagen",
+        model: "Golf",
+        cor: "Cinza",
+        ano: "2015",
+        estado: "Paraná",
+        categoria: "Hatch",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/248827/3652505/volkswagen-golf-2-0-gti-tsi-350-16v-230cv_f57dd5aa48d.jpeg",
+        descricao: "2.0 GTI TSI 350 16V 230cv",
+        link: "carros/carros22.html"
+      },
+      {
+        brand: "mercedes",
+        model: "A250",
+        cor: "Vermelho",
+        ano: "2016",
+        estado: "Paraná",
+        categoria: "Hatch",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3730315/mercedes-benz-a-250-2-0-cgi-sport-turbo-4p_f5b250fddb2.jpg",
+        descricao: "2.0 CGI SPORT TURBO 4P",
+        link: "carros/carros23.html"
+      },
+      {
+        brand: "Chevrolet",
+        model: "cruze",
+        cor: "Prata",
+        ano: "2019",
+        estado: "Santa Catarina",
+        categoria: "Hatch",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/27194/3222013/chevrolet-cruze-1-4-lt-sport-turbo-16v-4p_f5b5a7c7519.jpg",
+        descricao: "1.4 LT SPORT TURBO 16V 4P",
+        link: "carros/carros23.html"
+      },
+      {
+        brand: "mercedes",
+        model: "GLC",
+        cor: "cinza",
+        ano: "2017",
+        estado: "Santa Catarina",
+        categoria: "SUV",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/33185/3649866/mercedes-benz-glc-43-amg-3-0-bi-turbo-v6-367cv-4p_f57b7660f34.jpg",
+        descricao: "3.0 BI-TURBO V6 367cv 4P",
+        link: "carros/carros25.html"
+      },
+      {
+        brand: "Bmw",
+        model: "M2",
+        cor: "Azul",
+        ano: "2019",
+        estado: "Paraná",
+        categoria: "Coupe",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/99575/3626893/bmw-m2-3-0-competition-bi-turbo-410cv_f571c25a44f.jpeg",
+        descricao: "3.0 COMPETITION BI TURBO 410cv",
+        link: "carros/carros26.html"
+      },
+      {
+        brand: "renault",
+        model: "sandeiro",
+        cor: "Preto",
+        ano: "2011",
+        estado: "Paraná",
+        categoria: "Hatch",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/21481/3727942/renault-sandero-1-6-expression-16v-4p_f5b1f9ac102.jpeg",
+        descricao: "1.6 EXPRESSION 16V 4P",
+        link: "carros/carros27.html"
+      },
+      {
+        brand: "nissan",
+        model: "frotiner",
+        cor: "cinza",
+        ano: "2010",
+        estado: "São Paulo",
+        categoria: "Caminhonete",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/90917/2309082/nissan-frontier-em-botucatu-sp-f189459b778.jpg",
+        descricao: "2.5 LE 4X4 CD TURBO ELETRONIC 4P",
+        link: "carros/carros28.html"
+      },
+      {
+        brand: "Chevrolet",
+        model: "Camaro",
+        cor: "Amarelo",
+        ano: "2014",
+        estado: "São Paulo",
+        categoria: "Coupe",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/90917/2004638/chevrolet-camaro-em-botucatu-sp-f15a760db81.jpg",
+        descricao: "6.2 SS V8 16V 406cv",
+        link: ""
+      },
+      {
+        brand: "Chevrolet",
+        model: "Camaro",
+        cor: "Azul",
+        ano: "2019",
+        estado: "São Paulo",
+        categoria: "Coupe",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/45388/2787096/chevrolet-camaro-6-2-ss-v8-16v-406cv_f5a16fc78ad.jpg",
+        descricao: "6.2 SS V8 16V 406cv",
+        link: "carros/carros30.html"
+      },
+      {
+        brand: "nissan",
+        model: "Tiida",
+        cor: "Prata",
+        ano: "2013",
+        estado: "Paraná",
+        categoria: "Hatch",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3770381/nissan-tiida-1-8-sl-16v-4p_f5cb6a6936a.jpg",
+        descricao: "1.8 SL 16V 4P",
+        link: "carros/carros31.html"
+      },
+      {
+        brand: "volkswagen",
+        model: "Saveiro",
+        cor: "Branco",
+        estado: "Paraná",
+        ano: "2023",
+        categoria: "Caminhonete",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/2106/3741943/volkswagen-saveiro-1-6-robust-total-flex-16v_f5b85c46df9.jpeg",
+        descricao: "1.6 ROBUST TOTAL FLEX 16V",
+        link: "carros/carros32.html"
+      },
+      {
+        brand: "renault",
+        model: "Clio",
+        cor: "Preto",
+        estado: "São Paulo",
+        ano: "2011",
+        categoria: "hatch",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/279242/3546834/renault-clio-em-sao-paulo-sp-f5a4d4c56d7.jpg",
+        descricao: "1.0 CAMPUS 16V 4P",
+        link: "carros/carros33"
+      },
+      {
+        brand: "volkswagen",
+        model: "t-cross",
+        cor: "Cinza",
+        estado: "Paraná",
+        categoria: "SUV",
+        ano: "2021",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/2106/3742668/volkswagen-t-cross-1-4-tsi-highline-250-16v-4p_f5b89544fc8.jpeg",
+        descricao: "1.4 TSI HIGHLINE 250 16V 4P",
+        link: "carros/carros34.html",
+      },
+      {
+        brand: "Mini",
+        model: "ONE",
+        cor: "Bege",
+        estado: "Paraná",
+        ano: "2021",
+        categoria: "Hatch",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/237635/3778879/mini-one-1-6_f5cf02558c4.jpeg",
+        descricao: "1.6",
+        link: "carros/carros35.html",
 
-},
-  {
+      },
+      {
         brand: "Jeep",
         model: "Compass",
         cor: "Prata",
@@ -517,8 +557,52 @@ link: "carros/carros34.html",
         link: "carros/carros1.html"
       },
       {
-        
-      }
+        brand: "Chevrolet",
+        model: "S10",
+        cor: "Prata",
+        ano: "2018",
+        estado: "Paraná",
+        categoria: "Caminhonete",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/340020/3704229/chevrolet-s10-em-curitiba-pr-f5a18020c4f-00.jpg",
+        descricao: "2.8 PICK-UP LTZ 4X4 CD TURBO INTERCOOLER",
+        link: "carros/carros36.html"
+
+      },
+      {
+        brand: "Audi",
+        model: "Q3",
+        cor: "Preto",
+        ano: "2019",
+        estado: "São Paulo",
+        categoria: "SUV",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/51017/2108046/audi-q3-1-4-tfsi-prestige-4p_f19f5fcacfa.jpeg",
+        descricao: "1.4 TFSI PRESTIGE 4P",
+        link: "carros/carros37.html"
+      },
+      {
+        brand: "Citroen",
+        model: "C4 Picasso",
+        cor: "Vermelho",
+        ano: "2009",
+        estado: "São Paulo",
+        categoria: "Hatch",
+        imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/191934/3493704/citroen-c4-em-sao-paulo-sp-18831222fa7.jpg",
+        descricao: "2.0 16V 4P",
+        link: "carros/carros38.html",
+       },
+
+       { brand: "nissan",
+         model: "Sentra",
+         cor: "Branco",
+         estado: "Paraná",
+         ano:   "2020",
+         categoria: "Sedan",
+         imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/4481/3771727/nissan-sentra-2-0-sv-flexstart-16v-4p_f5cbbd27953.jpeg",
+         descricao: "2.0 SV FLEXSTART 16V 4P",
+         link: "carros/carros39.html",
+         
+
+       }
     ];
 
     var divCarros = document.getElementById("carros");

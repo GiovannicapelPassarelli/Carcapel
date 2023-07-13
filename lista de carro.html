@@ -103,17 +103,18 @@
     <label for="marca">Marca:</label>
     <select id="marca" onchange="filterCars()">
       <option value="">Todas</option>
-      <option value="Citroen">Citroen</option>
-      <option value="Bmw">Bmw</option>
       <option value="Audi">Audi</option>
-      <option value="Honda">Honda</option>
-      <option value="porsche">Porsche</option>
-      <option value="mercedes">Mercedes-Benz</option>
-      <option value="volkswagen">Volkswagen</option>
-      <option value="renault">Renault</option>
-      <option value="nissan">Nissan</option>
+      <option value="Bmw">Bmw</option>
       <option value="Chevrolet">Chevrolet</option>
+      <option value="Citroen">Citroen</option>
+      <option value="Honda">Honda</option>
+      <option value="mercedes">Mercedes-Benz</option>
       <option value="Mini">Mini</option>
+      <option value="nissan">Nissan</option>
+      <option value="porsche">Porsche</option>
+      <option value="renault">Renault</option>
+      <option value="volkswagen">Volkswagen</option>
+      </option>
     </select>
 
     <label for="modelo">Modelo:</label>
@@ -600,9 +601,27 @@
          imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/4481/3771727/nissan-sentra-2-0-sv-flexstart-16v-4p_f5cbbd27953.jpeg",
          descricao: "2.0 SV FLEXSTART 16V 4P",
          link: "carros/carros39.html",
-         
-
-       }
+        },
+        {
+          brand: "Bmw",
+          model: "320I",
+          cor: "Preto",
+          estado: "Paraná",
+          ano: "2017",
+          categoria: "Sedan",
+          imagem: "https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/73944/3758495/bmw-320i-em-curitiba-pr-43fccb57.jpg",
+          descricao: "2.0 SEDAN 16V 4P",
+          link: "carros/carros40.html"
+        },
+        {
+          brand: "Chevrolet",
+          model: "Onix",
+          cor: "Preto",
+          estado: "Minas Gerais",
+          categoria: "Sedan",
+          imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230629/chevrolet-onix-1.0-flex-plus-lt-manual-wmimagem09303917168.jpg?s=fill&w=1920&h=1440&q=75",
+          link: "carros/carros41.html"
+        }
     ];
 
     var divCarros = document.getElementById("carros");

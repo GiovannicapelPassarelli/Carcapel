@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Catálogo de Carros</title>
+  <div class="logo"></div>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -44,12 +44,15 @@
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      position: absolute;
+      align-items: center;
+      display: flex;
+      justify-content: center;
 
     }
 
     .car button:hover {
       background-color: #45a049;
+      align-items: center;
     }
 
     .car a {
@@ -86,14 +89,22 @@
       border: none;
       background: transparent;
       cursor: pointer;
+      
     }
 
     .select-button img {
       width: 20px;
       height: 20px;
       margin-right: 5px;
+    
+     
     }
-  </style>
+    .logo{
+      width: 350px;
+      height: 400px;
+      background-image: url(logo/Logo\ Menor.png);
+    }
+    </style>
 </head>
 
 <body>
@@ -705,6 +716,16 @@
         categoria:"Coupe",
         imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230703/porsche-911-3.0-24v-h6-gasolina-carrera-s-pdk-wmimagem10400894643.jpg?s=fill&w=1920&h=1440&q=75",
         link: "carros/carros49.html"
+        },
+        {
+          brand: "mercedes",
+          model: "C250",
+          cor: "Cinza",
+          estado: "São Paulo",
+          ano:"2016",
+          categoria:"Sedan",
+          imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230628/mercedesbenz-c-250-2.0-cgi-sport-turbo-16v-gasolina-4p-automatico-wmimagem16302416851.jpg?s=fill&w=1920&h=1440&q=75",
+          link: "carros/carros50.html"
         }
 
     ];

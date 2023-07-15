@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Catálogo de Carros</title>
   <div class="logo"></div>
@@ -13,6 +14,7 @@
     h1 {
       text-align: center;
       margin-bottom: 20px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 
     .car {
@@ -89,22 +91,25 @@
       border: none;
       background: transparent;
       cursor: pointer;
-      
+
     }
 
     .select-button img {
       width: 20px;
       height: 20px;
       margin-right: 5px;
-    
-     
+
+
     }
-    .logo{
+
+    .logo {
       width: 350px;
       height: 400px;
       background-image: url(logo/Logo\ Menor.png);
+      background-position: center;
+
     }
-    </style>
+  </style>
 </head>
 
 <body>
@@ -706,27 +711,40 @@
         categoria: "hatch",
         imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230706/volkswagen-gol-1.0-12v-mpi-totalflex-4p-manual-wmimagem11170613516.jpg?s=fill&w=1920&h=1440&q=75",
         link: "carros/carros48.html",
-       },
-       {
+      },
+      {
         brand: "porsche",
         model: "911",
         cor: "azul",
-        estado:"Paraná",
+        estado: "Paraná",
         ano: "2021",
-        categoria:"Coupe",
+        categoria: "Coupe",
         imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230703/porsche-911-3.0-24v-h6-gasolina-carrera-s-pdk-wmimagem10400894643.jpg?s=fill&w=1920&h=1440&q=75",
         link: "carros/carros49.html"
-        },
-        {
-          brand: "mercedes",
-          model: "C250",
-          cor: "Cinza",
-          estado: "São Paulo",
-          ano:"2016",
-          categoria:"Sedan",
-          imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230628/mercedesbenz-c-250-2.0-cgi-sport-turbo-16v-gasolina-4p-automatico-wmimagem16302416851.jpg?s=fill&w=1920&h=1440&q=75",
-          link: "carros/carros50.html"
-        }
+      },
+      {
+        brand: "mercedes",
+        model: "C250",
+        cor: "Cinza",
+        estado: "São Paulo",
+        ano: "2016",
+        categoria: "Sedan",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230628/mercedesbenz-c-250-2.0-cgi-sport-turbo-16v-gasolina-4p-automatico-wmimagem16302416851.jpg?s=fill&w=1920&h=1440&q=75",
+        link: "carros/carros50.html"
+      },
+      {
+        brand: "Mini",
+        model: "Countryman",
+        cor:"Cinza",
+        estado:"São Paulo",
+        ano: "2019",
+        categoria: "SUV",
+        imagem: "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202307/20230714/mini-countryman-2.0-16v-twinpower-turbo-gasolina-john-cooper-works-all4-steptronic-wmimagem12593094439.jpg?s=fill&w=1920&h=1440&q=75",
+        link: "carros/carros51.html"
+      }
+
+
+
 
     ];
 
@@ -737,6 +755,7 @@
     var selectCor = document.getElementById("cor");
     var selectEstado = document.getElementById("estado");
     var selectCategoria = document.getElementById("categoria");
+    var marcastyle = document.getElementById("brand");
 
     function filterCars() {
       var marca = selectMarca.value;
@@ -786,7 +805,11 @@
           divCarros.appendChild(divCar);
         }
       }
+
     }
+
+
+
 
     window.onload = function () {
       filterCars();

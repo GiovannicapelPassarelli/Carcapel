@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+</head>
+<style>
+    body{
+        background-color: azure;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+  .Formulario{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+  } 
+  .NomeeSobrenome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Nome{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    border-radius: 10cm;
+    box-shadow: 0cm;
+  }
+  .Sobrenome{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    border-radius: 10cm;
+    box-shadow: 0cm;
+  }
+ .emailesenha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .email{
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    border-radius: 10cm;
+    box-shadow: 0cm;
+  }
+  .senha{
+    color: blue;
+    border-radius: 10cm;
+    box-shadow: 0cm;
+  } 
+  .Enviar{
+    background-color: #45a049;
+      align-items: center;
+  }
+</style>
+<body>
+    <h1 class="Formulario">Formulário</h1>
+    <form action="perfil do usuario.html">
+        <div class="NomeeSobrenome">
+            <h3 class="Nome">Nome</h3>
+            <input type="text" required>
+            <h3 class="Sobrenome">Sobrenome</h3>
+            <input type="text"  required>
+        </div>
+        <div class="emailesenha">
+            <h3 class="email">E-mail</h3>
+            <input type="email" required>
+            <h3 class="senha">Senha</h3>
+            <input type="password" required>
+        </div>
+        <button class="Enviar">Enviar</button>
+    </form>
+</body>
+</html>

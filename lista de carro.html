@@ -6,22 +6,25 @@
   <div class="logo"></div>
   <h2>Capel Car Seu futuro aqui</h2>
   <style>
-    body {
+     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
+      
     }
 
     h1 {
       text-align: center;
       margin-bottom: 20px;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
-    h2{
+
+    h2 {
       text-align: left;
       margin-bottom: 20px;
       font: optional;
     }
+
     .car {
       border: 1px solid #ccc;
       border-radius: 5px;
@@ -54,7 +57,6 @@
       align-items: center;
       display: flex;
       justify-content: center;
-
     }
 
     .car button:hover {
@@ -74,6 +76,7 @@
     }
 
     .filter-container label {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       margin-left: 10px;
     }
 
@@ -96,15 +99,12 @@
       border: none;
       background: transparent;
       cursor: pointer;
-
     }
 
     .select-button img {
       width: 20px;
       height: 20px;
       margin-right: 5px;
-
-
     }
 
     .logo {
@@ -112,15 +112,16 @@
       height: 400px;
       background-image: url(logo/Logo\ Menor.png);
       background-position: center;
-
+    }
+    .ul{
+      background-color: black;
     }
   </style>
 </head>
 
 <body>
   <h1>Veja os vendedores</h1>
-
-  <div class="filter-container">
+  <div class="filter-container"> <li></li>
     <label for="marca">Marca:</label>
     <select id="marca" onchange="filterCars()">
       <option value="">Todas</option>
@@ -208,6 +209,7 @@
       <option value="Minas Gerais">Minas Gerais</option>
       <option value="Ceara">Ceara</option>
     </select>
+  
   </div>
 
   <div class="filter-container">
@@ -222,9 +224,7 @@
       <option value="Minivan">Minivan</option>
     </select>
   </div>
-
   <div id="carros"></div>
-
   <script>
     var carros = [
       {
@@ -789,7 +789,15 @@
         categoria:"SUV",
         imagem:"https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/252745/3790085/fiat-fastback-em-sao-paulo-sp-5a33efb8.jpg",
         link: "carros/carros54.html"
-       }
+       },
+       { brand:"mercedes",
+        model:"Gla",
+        cor:"cinza",
+        estado:"São Paulo",
+        categoria:"suv",
+        imagem:"https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/252745/3749595/mercedes-benz-gla-200-em-sao-paulo-sp-f876e104.jpg",
+        link: "carros/carros54.html"
+      }
       
 
 

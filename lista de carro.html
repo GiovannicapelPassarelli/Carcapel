@@ -151,6 +151,7 @@
 
     <label for="modelo">Modelo:</label>
     <select id="modelo" onchange="filterCars()">
+    <option value="">Todos</option>
     </select>
 
     <label for="ano">Ano:</label>
@@ -558,7 +559,7 @@
       },
       {
         brand: "volkswagen",
-        model: "t-cross",
+        model: "T-Cross",
         cor: "Cinza",
         estado: "Paraná",
         categoria: "SUV",
@@ -883,15 +884,31 @@
         estado:"São Paulo",
         imagem:"https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/53790/1701533/audi-a4-2-0-tfsi-avant-ambiente-4p_ef4f39ebc25.jpg",
         link:"carros/carros63.html"
-       },{
+       },
+       {
         brand:"hyundai",
         model:"Ix35",
+        ano:"2020",
+        cor:"Preto",
+        estado:"São Paulo",
+        imagem:"https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/80113/1099952/hyundai-ix35-2-0-gl-2wd-16v-4p_eca457b0b0d.jpg",
+        link:"carros/carros64.html"
+       },
+       {
+        brand:"volkswagen",
+        model:"Gol",
+        ano:"1987",
+        cor:"Cinza",
+        estado:"São Paulo",
+        imagem:"https://www.chavesnamao.com.br/imn/0000x0000/N/veiculos/292472/3767138/volkswagen-gol-em-sao-paulo-sp-f7601e55.jpg",
        }
 
 
-
     ];
+  
 
+  // Code to filter cars based on the selected filters
+  function filterCars() {
     var divCarros = document.getElementById("carros");
     var selectMarca = document.getElementById("marca");
     var selectModelo = document.getElementById("modelo");
@@ -901,63 +918,61 @@
     var selectCategoria = document.getElementById("categoria");
     var marcastyle = document.getElementById("brand");
 
-    function filterCars() {
-      var marca = selectMarca.value;
-      var modelo = selectModelo.value;
-      var ano = selectAno.value;
-      var cor = selectCor.value;
-      var estado = selectEstado.value;
-      var categoria = selectCategoria.value;
+    var marca = selectMarca.value.toLowerCase();
+    var modelo = selectModelo.value;
+    var ano = selectAno.value;
+    var cor = selectCor.value;
+    var estado = selectEstado.value;
+    var categoria = selectCategoria.value;
 
-      divCarros.innerHTML = "";
+    divCarros.innerHTML = "";
 
-      for (var i = 0; i < carros.length; i++) {
-        var car = carros[i];
+    for (var i = 0; i < carros.length; i++) {
+      var car = carros[i];
 
-        if (
-          (marca === "" || car.brand === marca) &&
-          (modelo === "" || car.model === modelo) &&
-          (ano === "" || car.ano === ano) &&
-          (cor === "" || car.cor === cor) &&
-          (estado === "" || car.estado === estado) &&
-          (categoria === "" || car.categoria === categoria)
-        ) {
-          var divCar = document.createElement("div");
-          divCar.classList.add("car");
-          divCar.dataset.brand = car.brand;
-          divCar.dataset.model = car.model;
-          divCar.dataset.cor = car.cor;
-          divCar.dataset.ano = car.ano;
-          divCar.dataset.estado = car.estado;
-          divCar.dataset.categoria = car.categoria;
+      if (
+        (marca === "" || car.brand.toLowerCase() === marca) &&
+        (modelo === "" || car.model === modelo) &&
+        (ano === "" || car.ano === ano) &&
+        (cor === "" || car.cor === cor) &&
+        (estado === "" || car.estado === estado) &&
+        (categoria === "" || car.categoria === categoria)
+      ) {
+        var divCar = document.createElement("div");
+        divCar.classList.add("car");
+        divCar.dataset.brand = car.brand;
+        divCar.dataset.model = car.model;
+        divCar.dataset.cor = car.cor;
+        divCar.dataset.ano = car.ano;
+        divCar.dataset.estado = car.estado;
+        divCar.dataset.categoria = car.categoria;
 
-          var h2 = document.createElement("h2");
-          h2.innerText = car.brand + " " + car.model;
-          divCar.appendChild(h2);
+        var h2 = document.createElement("h2");
+        h2.innerText = car.brand + " " + car.model;
+        divCar.appendChild(h2);
 
-          var img = document.createElement("img");
-          img.src = car.imagem;
-          divCar.appendChild(img);
+        var img = document.createElement("img");
+        img.src = car.imagem;
+        divCar.appendChild(img);
 
-          var button = document.createElement("button");
-          var link = document.createElement("a");
-          link.href = car.link;
-          link.innerText = "Mais informações";
-          button.appendChild(link);
-          divCar.appendChild(button);
+        var button = document.createElement("button");
+        var link = document.createElement("a");
+        link.href = car.link;
+        link.innerText = "Mais informações";
+        button.appendChild(link);
+        divCar.appendChild(button);
 
-          divCarros.appendChild(divCar);
-        }
+        divCarros.appendChild(divCar);
       }
-
     }
+  }
+  window.onload = function () {
+    filterCars();
+  };
 
-
-
-
-    window.onload = function () {
-      filterCars();
-    };
+  document.getElementById("marca").addEventListener("change", filterCars);
+  document.getElementById("modelo").addEventListener("change", filterCars);
+ 
   </script>
 </body>
 
